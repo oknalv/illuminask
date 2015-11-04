@@ -1,0 +1,463 @@
+@font-face {
+	font-family: Gravity;
+	src: url(../fonts/Gravity-Book.woff);
+}
+
+* {
+	font-family: Gravity;
+	outline: 0 !important;
+}
+
+html, body{
+	height:100%;
+	width: 100%;
+}
+
+.custom-container-fluid{
+	height:100%;
+	width: 100%;
+}
+
+.custom-row-lateral-bar{
+	height:100%;
+}
+
+.custom-navbar{
+	background-color: #6f5499;
+	color: white;
+	border: none;
+	border-radius: 0px;
+	font-size: 16px;
+	font-weight: bold;
+	margin-bottom: 0px;
+	position: fixed;
+	width: 100%;
+	z-index: 2;
+}
+
+.custom-navbar-a{
+	font-size: 16px;
+	font-weight: bold;
+	color: white !important;
+	text-align: center;
+	background-color: #6f5499 !important;
+}
+
+.custom-navbar-a:hover,
+.custom-navbar-a:focus,
+.custom-navbar-a:active{
+	color: #ff7206 !important;
+}
+
+.custom-modal .custom-navbar-a{
+	background-color: #937DB5 !important;
+	color: white !important;
+	border: 1px solid #6f5499;
+	border-radius: 4px;
+}
+
+.custom-modal .custom-navbar-a:hover{
+	color: white !important;
+	background-color: #6f5499 !important;
+}
+
+.custom-logo{
+	max-height: 50px;
+	float: left;
+}
+.custom-btn{
+	background-color: #937DB5;
+	color: white;
+	font-weight: bold;
+	border-color: #6f5499;
+}
+
+.custom-btn:active,
+.custom-btn:focus{
+	background-color: #6f5499 !important;
+	color: white !important;
+	border-color: #6f5499 !important;
+}
+
+.custom-hidden-menu-btn,
+.custom-hidden-menu-btn:focus,
+.custom-hidden-menu-btn:active{
+	float:right;
+	margin-top: 10px;
+	margin-right: 10px;
+	border-color: white;
+	background-color: white !important;
+	color: #6f5499 !important;
+	border-color: white !important;
+}
+
+.custom-btn:hover{
+	background-color: #6f5499;
+	color: white;
+	font-weight: bold;
+	border-color: #6f5499;
+}
+
+.custom-hidden-menu-btn:hover{
+	background-color:white;
+	color: #6f5499;
+}
+.custom-menu{
+	background-color: #bfb1d7;
+	padding-top: 60px;
+	height: 100%;
+}
+
+.custom-title{
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.custom-title-mobile{
+	padding-top: 5px;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.custom-menu li a,
+.custom-menu-mobile li a{
+	color: #6f5499;
+	font-size: 16px;
+	font-weight: bold;
+	background-color: #bfb1d7 !important;
+	text-align: center;
+	border: #6f5499 solid 1px;
+}
+
+.custom-menu li.active a,
+.custom-menu-mobile li.active a{
+	background-color: #6f5499 !important;
+	color: white;
+}
+
+.custom-menu li a:hover,
+.custom-menu-mobile li a:hover{
+	color: white;
+	background-color: #937DB5 !important;
+}
+
+
+
+.custom-search-input{
+	border-color: #bfb1d7;
+}
+
+.custom-search-btn{
+	border-color: #bfb1d7;
+	color: #6f5499;
+}
+
+.custom-cuerpo{
+	padding-top: 50px;
+}
+
+.affix{
+	right: 0px;
+}
+
+.custom-modal, 
+.custom-form{
+	background-color: #bfb1d7;
+}
+
+.custom-modal-title{
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.custom-question{
+	margin-top: 10px;
+	border-bottom: 1px solid #bfb1d7;
+}
+
+.custom-counter-container,
+.custom-counter-container *{
+	text-align: center;
+	padding-left: 0px !important;
+}
+
+.custom-counter-number{
+	font-size: 20px;
+}
+.custom-question-title-link a{
+	font-size: 20px;
+}
+.custom-a{
+	color: #ff7206;
+}
+
+.custom-a:hover{
+	color: #bfb1d7;
+	text-decoration: none;
+}
+
+/*Parte questions*/
+
+/*Para establecer tamaño icono pregunta*/
+.custom-iconoPregunta{
+	width:60px;
+	margin-right: 22px;
+}
+/*Para separar el div de la pregunta del menu*/
+.custom-question-header{
+	margin-top: 20px;
+}
+/*Tamaño titulo pregunta*/
+.custom-question-title{
+	font-size: 35px;
+}
+/*Para aumentar tamaño de los glyphicons de votos,
+así como poner color, color en hover...etc*/
+.custom-glyphicon-votes{
+	font-size: 30px;
+	color:grey;
+}
+.custom-glyphicon-votes:hover{
+	color:#bfb1d7;
+}
+.custom-glyphicon-best{
+	font-size: 30px;
+	color:green;
+}
+/*Para separar los glyphicons de votos de la pregunta*/
+.custom-votes{
+	margin-top: 15px;
+}
+/*Para poner el numero de votos*/
+.custom-votes-number{
+	margin-left: 10px;
+	font-size: 20px;
+	font-weight: bold;
+}
+/*Para pregunta y respuestas*/
+.custom-question-description, .custom-answer-description{
+	margin-top: 12px;
+	font-size: 18px;
+}
+
+.custom-squareVip-answer{
+	border:1px solid #6f5499;
+	background-color: #cec3e0;
+	border-radius: 10px;
+	margin-bottom: 20px;
+}
+
+.custom-answerInto-squareVip{
+	margin: 5px;
+}
+
+/*Para link comentario*/
+.custom-comment{
+	margin-top: 60px;
+}
+.custom-comment-link {
+	text-decoration: none;
+	color: #ff7206;
+	font-weight: bold;
+}
+.custom-comment-link:visited{
+	text-decoration: none;
+	color: #ff7206;
+	font-weight: bold;
+}
+.custom-comment-link:hover {
+	text-decoration: none;
+	color:#bfb1d7;
+}
+/*Para recuadro usuario*/
+.custom-square-user{
+	border:1px solid #6f5499;
+	border-radius: 20px;
+	width:200px;
+	height: 80px;
+	background-color: #cec3e0;
+	text-align: center;
+	font-weight: bold;
+}
+.custom-date{
+	padding-top: 15px;
+}
+.custom-user-link{
+	text-decoration: none;
+	color: #ff7206;
+}
+.custom-user-link:visited{
+	color: #ff7206;
+}
+.custom-user-link:hover{
+	text-decoration: none;
+	color: #6f5499;
+}
+/*Para poner numero de respuestas*/
+.custom-panel-answers{
+	margin-left: 87px;
+	margin-top: 10px;
+}
+/*Lineas de separacion*/
+.custom-line-separator{
+	 border-top: 2px solid #6f5499;
+	 margin-top: 30px;
+}
+
+/*Div oculta para comentar*/
+.custom-insert-comment{
+	height:140px;
+	margin-top: 20px;
+}
+/*Formato del textarea y de los botones de envío y reset del fromulario*/
+textarea{
+	border:1px solid #6f5499 !important;
+	background-color: #cec3e0 !important;
+	border-radius: 10px !important;
+}
+
+.custom-input-form{
+	width:55px;
+	height: 35px;
+	font-size: 15px;
+	background-color: #6f5499;
+	color:#f2f2f2;
+	border:1px solid white;
+	border-radius: 20px;
+	margin-top: 10px;
+}
+.custom-input-form:hover{
+	background-color: #cec3e0;
+	color:#ff7206;
+	font-weight: bold;
+	border:1px solid #6f5499;
+}
+
+
+/*QUERIES DE CSS PARA REDEFINIR MARGENES, TAMAÑOS DE FUENTES,ETC Y QUE TODO SEA RESPONSIVE
+  SE USA LOS TAMAÑOS DEFENIDOS EN CSS DE BOOTSTRAP(PONER TAMAÑO EN VEZ DE LOS NOMBRES....)
+*/
+@media (max-width: 395px){
+	.custom-comment{
+		padding-left:40px ;
+		font-size: 13px;
+	}
+
+	.custom-square-user{
+		margin-left: 5px ;
+		font-size: 13px;
+		width:130px;
+	}
+	.custom-question-description,.custom-answer-description{
+		font-size: 13px;
+		width:80vw;
+	}
+	.custom-iconoPregunta{
+		width:40px;
+	}
+	.custom-question-title{
+		font-size: 20px;
+	}
+	.custom-panel-answers{
+		margin-top: 30px;
+	}
+	.custom-line-separator{
+		 margin-top: 50px;
+	}
+	.custom-glyphicon-votes{
+		font-size: 25px;
+		
+	}
+	.custom-insert-comment{
+		font-size: 13px;
+	}
+
+}
+
+@media (max-width: 467px) and (min-width: 396px){
+	.custom-comment{
+		padding-left:40px ;
+	}
+
+	.custom-square-user{
+		margin-left: 30px ;
+		width:150px;
+	}
+	.custom-question-description,.custom-answer-description{
+		font-size: 15px;
+	}
+	.custom-iconoPregunta{
+		width:40px;
+	}
+	.custom-question-title{
+		font-size: 25px;
+	}
+	.custom-panel-answers{
+		margin-top: 30px;
+	}
+	.custom-line-separator{
+		 margin-top: 50px;
+	}
+}
+@media (max-width: 768px) and (min-width: 468px){
+	.custom-comment{
+		padding-left:70px ;
+	}
+
+	.custom-square-user{
+		margin-left: 70px ;
+	}
+	.custom-square-user{
+		width:150px;
+	}
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+
+	.custom-comment{
+		padding-left:70px ;
+	}
+
+	.custom-square-user{
+		margin-left: 80px ;
+	}
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199px){ 
+
+	.custom-comment{
+		padding-left:90px ;
+	}
+
+	.custom-square-user{
+		margin-left: 180px ;
+	}
+	.custom-insert-comment{
+		margin-bottom:15px;
+	}
+ }
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px ) {
+
+	.custom-comment{
+		padding-left:105px ;
+	}
+
+	.custom-square-user{              
+		margin-left: 285px ;
+	}
+	
+	.custom-insert-comment{
+		margin-bottom:15px;
+	}
+ }
+
+
+
+
+
