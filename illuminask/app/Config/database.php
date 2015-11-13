@@ -49,7 +49,7 @@
  * database. Uses database default not specified.
  *
  * sslmode =>
- * For Postgres specifies whether to 'disable', 'allow', 'prefer', or 'require' SSL for the 
+ * For Postgres specifies whether to 'disable', 'allow', 'prefer', or 'require' SSL for the
  * connection. The default value is 'allow'.
  *
  * unix_socket =>
@@ -70,13 +70,16 @@ class DATABASE_CONFIG {
 		'datasource' => 'Database/Mysql',
 		'persistent' => false,
 		'host' => 'localhost',
-		'login' => 'user',
-		'password' => 'password',
-		'database' => 'database_name',
+		'port' => '',
+		'login' => 'illuminuser',
+		'password' => 'illumipass',
+		'database' => 'illuminask',
+		'schema' => '',
 		'prefix' => '',
+		'encoding' => ''
 		//'encoding' => 'utf8',
 	);
-
+/*
 	public $test = array(
 		'datasource' => 'Database/Mysql',
 		'persistent' => false,
@@ -86,5 +89,5 @@ class DATABASE_CONFIG {
 		'database' => 'test_database_name',
 		'prefix' => '',
 		//'encoding' => 'utf8',
-	);
+	);*/
 }
