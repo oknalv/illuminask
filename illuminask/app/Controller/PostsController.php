@@ -5,6 +5,7 @@
     	public $components = array('Flash');
 
    		public function index() {
+					$this->layout= 'main';
         	$this->set('posts', $this->Post->find('all'));
     	}
 
@@ -21,7 +22,7 @@
 	            }
 	        }
 	    }
-	
+
 		public function edit($id = null) {
 		    if (!$id) {
 		        throw new NotFoundException(__('Invalid post'));
@@ -56,4 +57,4 @@
 		    }
 		}
 
-	}	
+	}

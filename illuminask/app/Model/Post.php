@@ -4,6 +4,7 @@
 	class Post extends AppModel{
 
 		public $name = 'Post';
+		public $belongsTo = 'User';
 
 		public $validate = array(
 	        'title' => array(
