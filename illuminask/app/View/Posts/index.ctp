@@ -36,7 +36,7 @@
 
           <?php
             $interval = ((new DateTime())->diff(new DateTime($post['Post']['date'])));
-            echo $interval->format("%a")?> hours ago</div>
+            echo sprintf(__('%s days ago'),$interval->format("%a"))?></div>
       </div>
     </div>
     <?php endforeach; ?>
