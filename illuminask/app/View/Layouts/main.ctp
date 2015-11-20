@@ -30,7 +30,7 @@
           <div class="hidden-xs">
             <form class="navbar-form navbar-right" role="search">
               <div class="input-group">
-                <input type="text" class="form-control custom-search-input" placeholder="search">
+                <input type="text" class="form-control custom-search-input" placeholder="<?= __('search');?>">
                 <span class="input-group-btn">
                   <button type="submit" class="btn btn-default custom-search-btn">
                     <i class="glyphicon glyphicon-search"></i>
@@ -40,7 +40,7 @@
             </form>
             <ul class="nav navbar-nav navbar-right">
               <li><a href="#" class="custom-navbar-a custom-btn" data-toggle="modal" data-target="#register">sign up</a></li>
-              <li><a href="#" class="custom-navbar-a custom-btn" data-toggle="modal" data-target="#login"">log in</a></li>
+              <li><a href="#" class="custom-navbar-a custom-btn" data-toggle="modal" data-target="#login">log in</a></li>
             </ul>
           </div>
         </div>
@@ -109,23 +109,49 @@
             <div class="modal-body center-block">
               <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
               <h1 class="custom-modal-title">Register</h1>
-              <form class="form">
-                <div class="form-group">
-                  <input type="text" class="form-control input-lg" placeholder="User Name">
-                </div>
-                <div class="form-group">
-                  <input type="password" class="form-control input-lg" placeholder="Password">
-                </div>
-                <div class="form-group">
-                  <input type="password" class="form-control input-lg" placeholder="Confirm password">
-                </div>
-                <div class="form-group">
-                  <input type="text" class="form-control input-lg" placeholder="Email">
-                </div>
-                <div class="form-group">
-                        <button class="btn btn-primary btn-lg btn-block custom-btn" >Register</button>
-                    </div>
-              </form>
+                <?php echo $this->Form->create('User', array(
+                  "class" => "form-group",
+                  "action" => "add"
+                )); ?>
+                    <fieldset>
+                        <div class="form-group">
+                        <?php echo $this->Form->input('name',array(
+                            "class" => "form-control input-lg", 
+                            "placeholder" => "User Name",
+                            "label" => false
+                        ));?>
+                        </div>
+                        <div class="form-group">
+                        <?php echo $this->Form->input('password',array(
+                            "class" => "form-control input-lg", 
+                            "placeholder" => "Password",
+                            "label" => false
+                        ));?>
+                        </div>
+                        <div class="form-group">
+                        <?php echo $this->Form->input('confirmPassword',array(
+                            "class" => "form-control input-lg", 
+                            "placeholder" => "Confirm Password",
+                            "type" => "password",
+                            "label" => false
+                        ));?>
+                        </div>
+                        <div class="form-group">
+                        <?php echo $this->Form->input('email',array(
+                            "class" => "form-control input-lg", 
+                            "placeholder" => "Email",
+                            "type" => "email",
+                            "label" => false
+                        ));?>
+                        </div>
+                        <div class="form-group">
+                        <?php echo $this->Form->button("Register",array(
+                            "class" => "btn btn-primary btn-lg btn-block custom-btn",
+                            "type" => "submit"
+                        ));?>
+                        </div>
+                    </fieldset>
+                        <?php echo $this->Form->end(); ?>
                   </div>
           </div>
           </div>
@@ -137,18 +163,35 @@
             <div class="modal-body center-block">
               <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
               <h1 class="custom-modal-title">Login</h1>
-              <form class="form">
-                <div class="form-group">
-                  <input type="text" class="form-control input-lg" placeholder="User Name">
-                </div>
-                <div class="form-group">
-                  <input type="password" class="form-control input-lg" placeholder="Password">
-                </div>
-                <div class="form-group">
-                        <button class="btn btn-primary btn-lg btn-block custom-btn" >Sign in</button>
-                    </div>
-                  </form>
-            </div>
+                <?php echo $this->Flash->render('auth'); ?>
+                <?php echo $this->Form->create('User', array(
+                  "class" => "form-group",
+                  "action" => "login"
+                )); ?>
+                    <fieldset>
+                        <div class="form-group">
+                        <?php echo $this->Form->input('name',array(
+                            "class" => "form-control input-lg", 
+                            "placeholder" => "User Name",
+                            "label" => false
+                        ));?>
+                        </div>
+                        <div class="form-group">
+                        <?php echo $this->Form->input('password',array(
+                            "class" => "form-control input-lg", 
+                            "placeholder" => "Password",
+                            "label" => false
+                        ));?>
+                        </div>
+                        <div class="form-group">
+                        <?php echo $this->Form->button("Sign in",array(
+                            "class" => "btn btn-primary btn-lg btn-block custom-btn",
+                            "type" => "submit"
+                        ));?>
+                        </div>
+                    </fieldset>
+                        <?php echo $this->Form->end(); ?>
+              </div>
             </div>
           </div>
       </div>

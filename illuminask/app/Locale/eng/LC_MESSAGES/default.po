@@ -3,3 +3,6 @@ msgstr "por"
 
 msgid "%s days ago"
 msgstr "hace %s días"
+
+msgid "search"
+msgstr "buscar"
