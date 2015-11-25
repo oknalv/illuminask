@@ -36,6 +36,10 @@
 	            $this->Flash->error(
 	                'The user could not be saved. Please, try again.'
 	            );
+							print_r($this->User->invalidFields()); die();
+							return $this->redirect(array(
+								'controller' => 'posts',
+								'action' => 'index'));
 	        }
 	    }
 	}
