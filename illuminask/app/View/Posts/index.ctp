@@ -5,11 +5,11 @@
     <div class="custom-question col-md-12 col-sm-12 col-xs-12">
       <div class="col-md-3 col-xs-3 custom-counter-container">
         <div class="col-md-4 custom-counter">
-          <span class="custom-counter-number">7</span><br>
+          <span class="custom-counter-number"><?= $post["Post"]["votes"]; ?></span><br>
           <span class="custom-counter-text"><?= __("votes"); ?></span>
         </div>
         <div class="col-md-4 custom-counter">
-          <span class="custom-counter-number">10</span><br>
+          <span class="custom-counter-number"><?= $post["Post"]["responses"]; ?></span><br>
           <span class="custom-counter-text"><?= __("answers"); ?></span>
         </div>
         <div class="col-md-4 custom-counter">

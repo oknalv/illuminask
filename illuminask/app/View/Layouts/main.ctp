@@ -4,6 +4,7 @@
   	<?php echo $this->Html->charset(); ?>
 		<title><?php echo $this->fetch('title'); ?></title>
     <?php
+      echo $this->Html->meta('icon','icon.png',array('type' => 'icon'));
 		  echo $this->Html->css('bootstrap.min');
 		  echo $this->Html->css('custom');
       echo $this->Html->script('jquery.min');
