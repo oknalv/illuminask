@@ -1,0 +1,63 @@
+msgid "by %s"
+msgstr "por %s"
+
+msgid "%s days ago"
+msgstr "hace %s días"
+
+msgid "search"
+msgstr "buscar"
+
+msgid "sign up"
+msgstr "registrarse"
+
+msgid "log in"
+msgstr "iniciar sesión"
+
+
+msgid "Categories"
+msgstr "Categorías"
+
+msgid "Newest"
+msgstr "Nuevos"
+
+msgid "Today"
+msgstr "Hoy"
+
+msgid "Week"
+msgstr "Semana"
+
+msgid "Month"
+msgstr "Mes"
+
+msgid "Voted"
+msgstr "Más votados"
+
+msgid "Menu"
+msgstr "Menú"
+
+msgid "Register"
+msgstr "Registrarse"
+
+msgid "User Name"
+msgstr "Nombre de usuario"
+
+msgid "Password"
+msgstr "Contraseña"
+
+msgid "Confirm Password"
+msgstr "Confirmar contraseña"
+
+msgid "Email"
+msgstr "Correo electrónico"
+
+msgid "Log in"
+msgstr "Iniciar sesión"
+
+msgid "votes"
+msgstr "votos"
+
+msgid "answers"
+msgstr "respuestas"
+
+msgid "views"
+msgstr "visitas"

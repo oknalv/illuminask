@@ -1,8 +1,62 @@
-msgid "by"
-msgstr "por"
+msgid "by %s"
+msgstr ""
 
 msgid "%s days ago"
-msgstr "hace %s días"
+msgstr ""
 
 msgid "search"
-msgstr "buscar"
+msgstr ""
+
+msgid "sign up"
+msgstr ""
+
+msgid "log in"
+msgstr ""
+
+msgid "Categories"
+msgstr ""
+
+msgid "Newest"
+msgstr ""
+
+msgid "Today"
+msgstr ""
+
+msgid "Week"
+msgstr ""
+
+msgid "Month"
+msgstr ""
+
+msgid "Voted"
+msgstr ""
+
+msgid "Menu"
+msgstr ""
+
+msgid "Register"
+msgstr ""
+
+msgid "User Name"
+msgstr ""
+
+msgid "Password"
+msgstr ""
+
+msgid "Confirm Password"
+msgstr ""
+
+msgid "Email"
+msgstr ""
+
+msgid "Log in"
+msgstr ""
+
+msgid "votes"
+msgstr ""
+
+msgid "answers"
+msgstr ""
+
+msgid "views"
+msgstr ""

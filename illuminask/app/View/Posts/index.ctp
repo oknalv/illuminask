@@ -6,15 +6,15 @@
       <div class="col-md-3 col-xs-3 custom-counter-container">
         <div class="col-md-4 custom-counter">
           <span class="custom-counter-number">7</span><br>
-          <span class="custom-counter-text">votes</span>
+          <span class="custom-counter-text"><?= __("votes"); ?></span>
         </div>
         <div class="col-md-4 custom-counter">
           <span class="custom-counter-number">10</span><br>
-          <span class="custom-counter-text">answers</span>
+          <span class="custom-counter-text"><?= __("answers"); ?></span>
         </div>
         <div class="col-md-4 custom-counter">
           <span class="custom-counter-number">500</span><br>
-          <span class="custom-counter-text">views</span>
+          <span class="custom-counter-text"><?= __("views"); ?></span>
         </div>
       </div>
       <div class="col-md-9 col-xs-9" class="custom-question-title">
@@ -26,13 +26,12 @@
               array('class' => "custom-a")
               );?>
         </div>
-        <div class="custom-question-title-data">by
-          <?php
-            echo $this->Html->link($post['User']['name'], array(
+        <div class="custom-question-title-data"><?= sprintf(__("by %s"),
+            $this->Html->link($post['User']['name'], array(
               'controller' => 'users',
               'action' => 'view',$post['User']['id']),
               array('class' => 'custom-a')
-            );?>
+            ));?>
 
           <?php
             $interval = ((new DateTime())->diff(new DateTime($post['Post']['date'])));

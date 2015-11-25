@@ -10,6 +10,7 @@
 		public function login() {
 		    if ($this->request->is('post')) {
 		        if ($this->Auth->login()) {
+		        $this->Flash->success('Login successful');
 		            return $this->redirect(array(
 	                	'controller' => 'posts',
 	                	'action' => 'index'));

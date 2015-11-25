@@ -39,8 +39,8 @@
               </div>
             </form>
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="#" class="custom-navbar-a custom-btn" data-toggle="modal" data-target="#register">sign up</a></li>
-              <li><a href="#" class="custom-navbar-a custom-btn" data-toggle="modal" data-target="#login">log in</a></li>
+              <li><a href="#" class="custom-navbar-a custom-btn" data-toggle="modal" data-target="#register"><?= __("sign up");?></a></li>
+              <li><a href="#" class="custom-navbar-a custom-btn" data-toggle="modal" data-target="#login"><?= __("log in");?></a></li>
             </ul>
           </div>
         </div>
@@ -49,13 +49,13 @@
     <div id="cuerpoymenu" class="container-fluid custom-container-fluid">
       <div class="row custom-row-lateral-bar">
         <div id="menu" class="col-sm-3 col-md-2 hidden-xs custom-menu affix">
-          <div class="custom-title">Categories</div>
+          <div class="custom-title"><?= __("Categories"); ?></div>
           <ul class="nav nav-pills nav-stacked">
-            <li class="active"><a href="#">Newest</a></li>
-            <li><a href="#">Today</a></li>
-            <li><a href="#">Week</a></li>
-            <li><a href="#">Month</a></li>
-            <li><a href="#">Voted</a></li>
+            <li class="active"><a href="#"><?= __("Newest"); ?></a></li>
+            <li><a href="#"><?= __("Today"); ?></a></li>
+            <li><a href="#"><?= __("Week"); ?></a></li>
+            <li><a href="#"><?= __("Month"); ?></a></li>
+            <li><a href="#"><?= __("Voted"); ?></a></li>
           </ul>
         </div>
         <div id="cuerpo" class="col-xs-12 col-sm-9 col-md-10 custom-cuerpo">
@@ -71,9 +71,9 @@
           <div class="modal-content custom-modal">
             <div class="modal-body">
               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-              <h4 class="modal-title custom-modal-title">Menu</h4>
+              <h4 class="modal-title custom-modal-title"><?= __("Menu"); ?></h4>
               <div class="input-group">
-                <input type="text" class="form-control custom-search-input" placeholder="search">
+                <input type="text" class="form-control custom-search-input" placeholder="<?= __("search"); ?>">
                 <span class="input-group-btn">
                   <button type="submit" class="btn btn-default custom-search-btn">
                     <i class="glyphicon glyphicon-search"></i>
@@ -82,18 +82,18 @@
               </div>
               <div class="container-fluid">
                 <ul class="nav navbar-nav">
-                  <li class="col-xs-6"><a href="#" data-toggle="modal" data-target="#register" class="custom-navbar-a custom-btn">sign up</a></li>
-                  <li class="col-xs-6"><a href="#" data-toggle="modal" data-target="#login" class="custom-navbar-a custom-btn">log in</a></li>
+                  <li class="col-xs-6"><a href="#" data-toggle="modal" data-target="#register" class="custom-navbar-a custom-btn"><?= __("sign up");?></a></li>
+                  <li class="col-xs-6"><a href="#" data-toggle="modal" data-target="#login" class="custom-navbar-a custom-btn"><?= __("log in");?></a></li>
                 </ul>
               </div>
               <div id="menu" class="custom-menu-mobile">
-                <div class="custom-title-mobile">Categories</div>
+                <div class="custom-title-mobile"><?= __("Categories"); ?></div>
                 <ul class="nav nav-pills nav-stacked">
-                  <li class="active"><a href="#">Newest</a></li>
-                  <li><a href="#">Today</a></li>
-                  <li><a href="#">Week</a></li>
-                  <li><a href="#">Month</a></li>
-                  <li><a href="#">Voted</a></li>
+                  <li class="active"><a href="#"><?= __("Newest"); ?></a></li>
+                  <li><a href="#"><?= __("Today"); ?></a></li>
+                  <li><a href="#"><?= __("Week"); ?></a></li>
+                  <li><a href="#"><?= __("Month"); ?></a></li>
+                  <li><a href="#"><?= __("Voted"); ?></a></li>
                 </ul>
                    </div>
                </div>
@@ -108,7 +108,7 @@
           <div class="modal-content custom-form">
             <div class="modal-body center-block">
               <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-              <h1 class="custom-modal-title">Register</h1>
+              <h1 class="custom-modal-title"><?= __("Register"); ?></h1>
                 <?php echo $this->Form->create('User', array(
                   "class" => "form-group",
                   "action" => "add"
@@ -116,36 +116,36 @@
                     <fieldset>
                         <div class="form-group">
                         <?php echo $this->Form->input('name',array(
-                            "class" => "form-control input-lg", 
-                            "placeholder" => "User Name",
+                            "class" => "form-control input-lg",
+                            "placeholder" => __("User Name"),
                             "label" => false
                         ));?>
                         </div>
                         <div class="form-group">
                         <?php echo $this->Form->input('password',array(
-                            "class" => "form-control input-lg", 
-                            "placeholder" => "Password",
+                            "class" => "form-control input-lg",
+                            "placeholder" => __("Password"),
                             "label" => false
                         ));?>
                         </div>
                         <div class="form-group">
                         <?php echo $this->Form->input('confirmPassword',array(
-                            "class" => "form-control input-lg", 
-                            "placeholder" => "Confirm Password",
+                            "class" => "form-control input-lg",
+                            "placeholder" => __("Confirm Password"),
                             "type" => "password",
                             "label" => false
                         ));?>
                         </div>
                         <div class="form-group">
                         <?php echo $this->Form->input('email',array(
-                            "class" => "form-control input-lg", 
-                            "placeholder" => "Email",
+                            "class" => "form-control input-lg",
+                            "placeholder" => __("Email"),
                             "type" => "email",
                             "label" => false
                         ));?>
                         </div>
                         <div class="form-group">
-                        <?php echo $this->Form->button("Register",array(
+                        <?php echo $this->Form->button(__("Register"),array(
                             "class" => "btn btn-primary btn-lg btn-block custom-btn",
                             "type" => "submit"
                         ));?>
@@ -162,7 +162,7 @@
           <div class="modal-content custom-form">
             <div class="modal-body center-block">
               <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-              <h1 class="custom-modal-title">Login</h1>
+              <h1 class="custom-modal-title"><?= __("Log in"); ?></h1>
                 <?php echo $this->Flash->render('auth'); ?>
                 <?php echo $this->Form->create('User', array(
                   "class" => "form-group",
@@ -171,20 +171,20 @@
                     <fieldset>
                         <div class="form-group">
                         <?php echo $this->Form->input('name',array(
-                            "class" => "form-control input-lg", 
-                            "placeholder" => "User Name",
+                            "class" => "form-control input-lg",
+                            "placeholder" => __("User Name"),
                             "label" => false
                         ));?>
                         </div>
                         <div class="form-group">
                         <?php echo $this->Form->input('password',array(
-                            "class" => "form-control input-lg", 
-                            "placeholder" => "Password",
+                            "class" => "form-control input-lg",
+                            "placeholder" => __("Password"),
                             "label" => false
                         ));?>
                         </div>
                         <div class="form-group">
-                        <?php echo $this->Form->button("Sign in",array(
+                        <?php echo $this->Form->button(__("Log in"),array(
                             "class" => "btn btn-primary btn-lg btn-block custom-btn",
                             "type" => "submit"
                         ));?>
