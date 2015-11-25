@@ -10,6 +10,7 @@
     	}
 
     	public function view($id = null) {
+					$this->layout= 'main';
         	$this->set('post', $this->Post->findById($id));
     	}
 
