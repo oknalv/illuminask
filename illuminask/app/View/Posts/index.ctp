@@ -34,8 +34,7 @@
             ));?>
 
           <?php
-            $interval = ((new DateTime())->diff(new DateTime($post['Post']['date'])));
-            echo sprintf(__('%s days ago'),$interval->format("%a"))?></div>
+            echo sprintf(__('%s ago'),sprintf(__($post['Post']['ago']['units']),__($post['Post']['ago']['value'])));?></div>
       </div>
     </div>
     <?php endforeach; ?>

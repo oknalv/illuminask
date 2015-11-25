@@ -1,7 +1,7 @@
 msgid "by %s"
 msgstr ""
 
-msgid "%s days ago"
+msgid "%s ago"
 msgstr ""
 
 msgid "search"
@@ -62,4 +62,40 @@ msgid "views"
 msgstr ""
 
 msgid "Add a comment"
+msgstr ""
+
+msgid "%s year"
+msgstr ""
+
+msgid "%s years"
+msgstr ""
+
+msgid "%s month"
+msgstr ""
+
+msgid "%s months"
+msgstr ""
+
+msgid "%s day"
+msgstr ""
+
+msgid "%s days"
+msgstr ""
+
+msgid "%s hour"
+msgstr ""
+
+msgid "%s hours"
+msgstr ""
+
+msgid "%s minute"
+msgstr ""
+
+msgid "%s minutes"
+msgstr ""
+
+msgid "%s second"
+msgstr ""
+
+msgid "%s seconds"
 msgstr ""

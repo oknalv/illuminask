@@ -1,8 +1,8 @@
 msgid "by %s"
 msgstr "por %s"
 
-msgid "%s days ago"
-msgstr "hace %s días"
+msgid "%s ago"
+msgstr "hace %s"
 
 msgid "search"
 msgstr "buscar"
@@ -64,3 +64,39 @@ msgstr "visitas"
 
 msgid "Add a comment"
 msgstr "Añadir un comentario"
+
+msgid "%s year"
+msgstr "%s año"
+
+msgid "%s years"
+msgstr "%s años"
+
+msgid "%s month"
+msgstr "%s mes"
+
+msgid "%s months"
+msgstr "%s meses"
+
+msgid "%s day"
+msgstr "%s día"
+
+msgid "%s days"
+msgstr "%s días"
+
+msgid "%s hour"
+msgstr "%s hora"
+
+msgid "%s hours"
+msgstr "%s horas"
+
+msgid "%s minute"
+msgstr "%s minuto"
+
+msgid "%s minutes"
+msgstr "%s minutos"
+
+msgid "%s second"
+msgstr "%s segundo"
+
+msgid "%s seconds"
+msgstr "%s segundos"
