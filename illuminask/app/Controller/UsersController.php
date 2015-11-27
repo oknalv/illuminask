@@ -20,9 +20,7 @@
 		}
 
 		public function logout() {
-		    return $this->redirect(array(
-	                	'controller' => 'posts',
-	                	'action' => 'index'));
+    		return $this->redirect($this->Auth->logout());
 		}
 
 		public function add() {
@@ -37,7 +35,7 @@
 	            $this->Flash->error(
 	                'The user could not be saved. Please, try again.'
 	            );
-							print_r($this->User->invalidFields()); die();
+							print_r($this->User->invalidFields());
 							return $this->redirect(array(
 								'controller' => 'posts',
 								'action' => 'index'));

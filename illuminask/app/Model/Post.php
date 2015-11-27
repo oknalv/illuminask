@@ -83,7 +83,7 @@
 			else{
 				$value = $interval->format("%s");
 				if($interval->s == 1)
-					$units = "%s seconds";
+					$units = "%s second";
 				else
 					$units = "%s seconds";
 			}

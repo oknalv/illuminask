@@ -40,8 +40,28 @@
               </div>
             </form>
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="#" class="custom-navbar-a custom-btn" data-toggle="modal" data-target="#register"><?= __("sign up");?></a></li>
-              <li><a href="#" class="custom-navbar-a custom-btn" data-toggle="modal" data-target="#login"><?= __("log in");?></a></li>
+              <?php if(AuthComponent::user('id')) { ?>
+                <li>
+                  <?= $this->Html->link(__("log out"), array(
+                    'controller' => 'users',
+                    'action' => 'logout'),
+                    array('class' => 'custom-navbar-a custom-btn')
+                  ); ?>
+                </li>
+              <?php } else { ?>
+                <li><a href="#" class="custom-navbar-a custom-btn" data-toggle="modal" data-target="#register"><?= __("sign up");?></a></li>
+                <li><a href="#" class="custom-navbar-a custom-btn" data-toggle="modal" data-target="#login"><?= __("log in");?></a></li>
+              <?php } ?>
+              <li>
+                  <?= $this->Html->link("eng", array('language'=>'eng'),
+                    array('class' => 'custom-navbar-a custom-btn')
+                  ); ?>
+              </li>
+              <li>
+                  <?= $this->Html->link("spa", array('language'=>'spa'),
+                    array('class' => 'custom-navbar-a custom-btn')
+                  ); ?>
+              </li>
             </ul>
           </div>
         </div>

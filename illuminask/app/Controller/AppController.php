@@ -52,10 +52,28 @@ class AppController extends Controller {
                     'passwordHasher' => 'Blowfish'
                 )
             )
-        )
+        ),
+        'Session'
     );
 
     public function beforeFilter() {
         $this->Auth->allow('index', 'view');
+        $this->_checkRoute();
+        Configure::write('Config.language', $this->Session->read('Config.language'));
+    }
+    public function _checkRoute() {
+        $params = $this->params['pass'];
+        $url = $this->here;
+
+        if (strpos($url, 'language:spa')) {
+            $this->Session->write('Config.language', 'spa'); 
+            Configure::write('Config.language', 'spa');
+        }
+
+        else if (strpos($url, 'language:eng')) {
+            Configure::write('Config.language', 'eng');
+            $this->Session->write('Config.language', 'eng');
+        }
+
     }
 }

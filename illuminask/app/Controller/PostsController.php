@@ -7,9 +7,6 @@
   		public function index() {
 					$this->layout= 'main';
 					$posts = $this->Post->find("all");
-					/*foreach($posts as $i=>$post){
-						$posts[$i]["Post"]["responses"] = $this->countResponses($post);
-					}*/
         	$this->set('posts', $posts);
     	}
 

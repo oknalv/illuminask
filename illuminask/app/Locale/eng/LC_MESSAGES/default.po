@@ -99,3 +99,6 @@ msgstr ""
 
 msgid "%s seconds"
 msgstr ""
+
+msgid "log out"
+msgstr ""

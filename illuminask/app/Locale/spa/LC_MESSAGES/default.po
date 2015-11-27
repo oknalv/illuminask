@@ -100,3 +100,6 @@ msgstr "%s segundo"
 
 msgid "%s seconds"
 msgstr "%s segundos"
+
+msgid "log out"
+msgstr "Cerrar sesión"
