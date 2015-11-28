@@ -11,9 +11,7 @@
 		    if ($this->request->is('post')) {
 		        if ($this->Auth->login()) {
 		        $this->Flash->success('Login successful');
-		            return $this->redirect(array(
-	                	'controller' => 'posts',
-	                	'action' => 'index'));
+		            return $this->redirect($this->referer());
 		        }
 		        $this->Flash->error('Invalid username or password, try again');
 		    }

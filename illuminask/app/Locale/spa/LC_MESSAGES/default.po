@@ -103,3 +103,9 @@ msgstr "%s segundos"
 
 msgid "log out"
 msgstr "Cerrar sesión"
+
+msgid "language"
+msgstr "idioma"
+
+msgid "Change language"
+msgstr "Cambiar idioma"

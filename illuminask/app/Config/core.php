@@ -383,8 +383,3 @@ Cache::config('_cake_model_', array(
 	'serialize' => ($engine === 'File'),
 	'duration' => $duration
 ));
-
-
-
-/*NOSOTROS*/
-Configure::write('Config.language', 'eng');

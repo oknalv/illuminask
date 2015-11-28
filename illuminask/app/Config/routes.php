@@ -44,5 +44,3 @@
  * the built-in default routes.
  */
 	require CAKE . 'Config' . DS . 'routes.php';
-
-	Router::connect('/:language/:controller/:action/*', array(), array('language' => '[a-z]{3}'));

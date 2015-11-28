@@ -102,3 +102,9 @@ msgstr ""
 
 msgid "log out"
 msgstr ""
+
+msgid "language"
+msgstr ""
+
+msgid "Change language"
+msgstr ""

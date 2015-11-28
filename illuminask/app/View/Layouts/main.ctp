@@ -51,16 +51,24 @@
               <?php } else { ?>
                 <li><a href="#" class="custom-navbar-a custom-btn" data-toggle="modal" data-target="#register"><?= __("sign up");?></a></li>
                 <li><a href="#" class="custom-navbar-a custom-btn" data-toggle="modal" data-target="#login"><?= __("log in");?></a></li>
-              <?php } ?>
-              <li>
-                  <?= $this->Html->link("eng", array('language'=>'eng'),
-                    array('class' => 'custom-navbar-a custom-btn')
-                  ); ?>
-              </li>
-              <li>
-                  <?= $this->Html->link("spa", array('language'=>'spa'),
-                    array('class' => 'custom-navbar-a custom-btn')
-                  ); ?>
+              <?php }?>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle custom-navbar-a custom-btn" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                  <?= __("language") ?>
+                  <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu custom-dropdown-menu" aria-labelledby="dropdownMenu1">
+                <?php
+                foreach(Configure::read("Config.languages") as $code => $language) {?>
+                <li>
+                    <?= $this->Html->link($language, array(
+                      'controller' => 'language',
+                      'action' => 'change', $code
+                    )
+                    ); ?>
+                </li>
+                <?php } ?>
+                </ul>
               </li>
             </ul>
           </div>
@@ -108,16 +116,40 @@
                 </ul>
               </div>
               <div id="menu" class="custom-menu-mobile">
-                <div class="custom-title-mobile"><?= __("Categories"); ?></div>
-                <ul class="nav nav-pills nav-stacked">
-                  <li class="active"><a href="#"><?= __("Newest"); ?></a></li>
-                  <li><a href="#"><?= __("Today"); ?></a></li>
-                  <li><a href="#"><?= __("Week"); ?></a></li>
-                  <li><a href="#"><?= __("Month"); ?></a></li>
-                  <li><a href="#"><?= __("Voted"); ?></a></li>
-                </ul>
-                   </div>
-               </div>
+                <div class="custom-title-mobile"role="button" data-toggle="collapse" href="#collapseCateg" aria-expanded="false" aria-controls="collapseCateg">
+                  <?= __("Categories"); ?>
+                  <span class="caret"></span>
+                </div>
+                <div class="collapse" id="collapseCateg">
+                  <ul class="nav nav-pills nav-stacked">
+                    <li class="active"><a href="#"><?= __("Newest"); ?></a></li>
+                    <li><a href="#"><?= __("Today"); ?></a></li>
+                    <li><a href="#"><?= __("Week"); ?></a></li>
+                    <li><a href="#"><?= __("Month"); ?></a></li>
+                    <li><a href="#"><?= __("Voted"); ?></a></li>
+                  </ul>
+                </div>
+                <hr>
+                <div class="custom-title-mobile" role="button" data-toggle="collapse" href="#collapseLang" aria-expanded="false" aria-controls="collapseLang">
+                  <?= __("Change language") ?>
+                  <span class="caret"></span>
+                </div>
+                <div class="collapse" id="collapseLang">
+                  <ul class="nav nav-pills nav-stacked">
+                    <?php
+                    foreach(Configure::read("Config.languages") as $code => $language) {?>
+                      <li>
+                          <?= $this->Html->link($language, array(
+                            'controller' => 'language',
+                            'action' => 'change', $code
+                          )
+                          ); ?>
+                      </li>
+                    <?php } ?>
+                  </ul>
+                </div>
+              </div>
+            </div>
             </div>
         </div>
       </div>
