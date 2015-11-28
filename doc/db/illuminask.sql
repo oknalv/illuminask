@@ -57,7 +57,7 @@ CREATE TABLE responsecomments(
 	FOREIGN KEY	(response_id) REFERENCES responses (id)
 );
 
-CREATE TABLE posts_users(
+CREATE TABLE post_votes(
 	id INTEGER NOT NULL AUTO_INCREMENT,
 	liked BOOLEAN NOT NULL,
 	user_id INTEGER NOT NULL,
@@ -67,8 +67,17 @@ CREATE TABLE posts_users(
 	FOREIGN KEY	(post_id) REFERENCES posts (id)
 );
 
+CREATE TABLE post_visits(
+	id INTEGER NOT NULL AUTO_INCREMENT,
+	user_id INTEGER NOT NULL,
+	post_id INTEGER NOT NULL,
+	PRIMARY KEY (id),
+	FOREIGN KEY (user_id) REFERENCES users (id),
+	FOREIGN KEY	(post_id) REFERENCES posts (id)
+);
 
-CREATE TABLE responses_users(
+
+CREATE TABLE response_votes(
 	id INTEGER NOT NULL AUTO_INCREMENT,
 	liked BOOLEAN NOT NULL,
 	user_id INTEGER NOT NULL,
@@ -93,7 +102,7 @@ INSERT INTO posts (title, content, date, user_id) VALUES
 ('post4', 'Este post es de Pedro', '2015-11-19 18:00:00', '4'),
 ('post5', 'Este post es de Silvia', '2015-11-20 18:00:00', '5');
 
-INSERT INTO posts_users (liked, user_id, post_id) VALUES
+INSERT INTO post_votes (liked, user_id, post_id) VALUES
 ('1', '1', '3'),
 ('0', '2', '5'),
 ('1', '3', '1');
@@ -108,7 +117,7 @@ INSERT INTO responsecomments (content, date, user_id, response_id) VALUES
 ('Este es un responseComment de Pedro', '2015-12-16 18:00:00', '5', '2'),
 ('Este es un response Comment de Miguel', '2015-12-28 18:00:00', '3', '1');
 
-INSERT INTO responses_users (liked, user_id, response_id) VALUES
+INSERT INTO response_votes (liked, user_id, response_id) VALUES
 ('1', '1', '2'),
 ('0', '3', '1'),
 ('1', '4', '1');
