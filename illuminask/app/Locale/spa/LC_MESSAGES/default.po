@@ -102,10 +102,40 @@ msgid "%s seconds"
 msgstr "%s segundos"
 
 msgid "log out"
-msgstr "Cerrar sesión"
+msgstr "cerrar sesión"
 
 msgid "language"
 msgstr "idioma"
 
 msgid "Change language"
 msgstr "Cambiar idioma"
+
+msgid "Login successful"
+msgstr "Inicio de sesión correcto"
+
+msgid "Your post has been published"
+msgstr "Tu post ha sido publicado"
+
+msgid "Your post has been updated"
+msgstr "Tu post ha sido actualizado"
+
+msgid "Unable to update your post"
+msgstr "No se puede actualizar tu post"
+
+msgid "The post has been deleted"
+msgstr "El post ha sido borrado"
+
+msgid "Your post could not been published"
+msgstr "Tu post no se ha podido publicar"
+
+msgid "Invalid username or password, try again"
+msgstr "Usuario o contraseña incorrectos, inténtalo de nuevo"
+
+msgid "The user has been created"
+msgstr "El usuario ha sido creado"
+
+msgid "The user could not be created, try again"
+msgstr "El usuario no se ha podido crear, inténtalo de nuevo"
+
+msgid "The user already exists"
+msgstr "El usuario ya existe"

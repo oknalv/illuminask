@@ -7,13 +7,24 @@
 		    $this->Auth->allow('add', 'logout');
 		}
 
-		public function login() {
+		public function login(){
+			if(AuthComponent::user('id'))
+				return $this->redirect(array(
+					'controller' => 'posts',
+					'action' => 'index'));
+			$this->layout= 'main';
+		}
+
+		public function doLogin() {
 		    if ($this->request->is('post')) {
 		        if ($this->Auth->login()) {
-		        $this->Flash->success('Login successful');
+		        	$this->Flash->success('Login successful');
 		            return $this->redirect($this->referer());
 		        }
 		        $this->Flash->error('Invalid username or password, try again');
+		        return $this->redirect(array(
+					'controller' => 'users',
+					'action' => 'login'));
 		    }
 		}
 
@@ -24,19 +35,15 @@
 		public function add() {
 	        if ($this->request->is('post')) {
 	            $this->User->create();
-	            if ($this->User->save($this->request->data)) {
-	                $this->Flash->success('The user has been saved');
-	                return $this->redirect(array(
-	                	'controller' => 'posts',
-	                	'action' => 'index'));
-	            }
-	            $this->Flash->error(
-	                'The user could not be saved. Please, try again.'
-	            );
-							print_r($this->User->invalidFields());
-							return $this->redirect(array(
-								'controller' => 'posts',
-								'action' => 'index'));
+	            if($this->User->findByName($this->request->data["User"]["name"]))
+		            $this->Flash->error('The user already exists');
+            	else if($this->User->save($this->request->data))
+	                $this->Flash->success('The user has been created');
+	            else
+	            	$this->Flash->error('The user could not be created, try again');
+				return $this->redirect(array(
+					'controller' => 'posts',
+					'action' => 'index'));
 	        }
 	    }
 	}

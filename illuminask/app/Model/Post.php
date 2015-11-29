@@ -5,14 +5,7 @@
 
 		public $name = 'Post';
 		public $belongsTo = 'User';
-		/* esto es un apaño, trampeo al Cake para que me acceda a la relacion muchos
-		 * a muchos como si fuera de uno a muchos así no se trae media BD. Quizas
-		 * sea necesario modificar la BD y renombrar la tabla. La trampa la hago
-		 * llamando al hasMany con PostsUser, así me transforma el nombre de la
-		 * clase en posts_users y accede al muchos a muchos. Igual es mejor ir a
-		 * preguntar si es correcto hacerlo.
-		 */
-		public $hasMany = array('PostsUser', 'Response');
+		public $hasMany = array('PostVote', 'Response', 'PostVisit');
 
 		public $validate = array(
         'title' => array(
@@ -26,8 +19,9 @@
 		public function afterFind($results, $primary = false){
 			foreach ($results as $i => $result) {
 				$results[$i]["Post"]["ago"] = $this->ago($result['Post']['date']);
-				$results[$i]["Post"]["votes"] = $this->calculateVotes($result["PostsUser"]);
+				$results[$i]["Post"]["votes"] = $this->calculateVotes($result["PostVote"]);
 				$results[$i]["Post"]["responses"] = count($result["Response"]);
+				$results[$i]["Post"]["visits"] = count($result["PostVisit"]);
 			}
 			return $results;
 		}

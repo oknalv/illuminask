@@ -89,6 +89,9 @@
         </div>
         <div id="cuerpo" class="col-xs-12 col-sm-9 col-md-10 custom-cuerpo">
           <!-- AQUÍ ES DONDE VA EL CUERPO DE LA APLICACIÓN, LA PARTE NO COMÚN -->
+          <?=
+          $this->Flash->render();
+          ?>
     			<?php echo $this->fetch('content'); ?>
         </div>
       </div>
@@ -219,7 +222,7 @@
                 <?php echo $this->Flash->render('auth'); ?>
                 <?php echo $this->Form->create('User', array(
                   "class" => "form-group",
-                  "action" => "login"
+                  "action" => "doLogin"
                 )); ?>
                     <fieldset>
                         <div class="form-group">

@@ -13,7 +13,7 @@
           <span class="custom-counter-text"><?= __("answers"); ?></span>
         </div>
         <div class="col-md-4 custom-counter">
-          <span class="custom-counter-number">500</span><br>
+          <span class="custom-counter-number"><?= $post["Post"]["visits"]; ?></span><br>
           <span class="custom-counter-text"><?= __("views"); ?></span>
         </div>
       </div>
