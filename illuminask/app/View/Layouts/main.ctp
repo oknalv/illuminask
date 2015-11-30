@@ -41,6 +41,7 @@
             </form>
             <ul class="nav navbar-nav navbar-right">
               <?php if(AuthComponent::user('id')) { ?>
+                <li><a href="#" class="custom-navbar-a custom-btn" data-toggle="modal" data-target="#newPost"><?= __("new post");?></a></li>
                 <li>
                   <?= $this->Html->link(__("log out"), array(
                     'controller' => 'users',
@@ -114,8 +115,20 @@
               </div>
               <div class="container-fluid">
                 <ul class="nav navbar-nav">
-                  <li class="col-xs-6"><a href="#" data-toggle="modal" data-target="#register" class="custom-navbar-a custom-btn"><?= __("sign up");?></a></li>
-                  <li class="col-xs-6"><a href="#" data-toggle="modal" data-target="#login" class="custom-navbar-a custom-btn"><?= __("log in");?></a></li>
+                  <?php if(AuthComponent::user('id')) { ?>
+                    <li class="col-xs-6"><a href="#" data-toggle="modal" data-target="#newPost" class="custom-navbar-a custom-btn"><?= __("new post");?></a></li>
+                    <li class="col-xs-6">
+                      <?= $this->Html->link(__("log out"), array(
+                        'controller' => 'users',
+                        'action' => 'logout'),
+                        array('class' => 'custom-navbar-a custom-btn')
+                      ); ?>
+                    </li>
+                  <?php }
+                  else { ?>
+                    <li class="col-xs-6"><a href="#" data-toggle="modal" data-target="#register" class="custom-navbar-a custom-btn"><?= __("sign up");?></a></li>
+                    <li class="col-xs-6"><a href="#" data-toggle="modal" data-target="#login" class="custom-navbar-a custom-btn"><?= __("log in");?></a></li>
+                  <?php } ?>
                 </ul>
               </div>
               <div id="menu" class="custom-menu-mobile">
@@ -251,6 +264,47 @@
             </div>
           </div>
       </div>
+      <?php if(AuthComponent::user('id')) { ?>
+      <!-- Modal newpost -->
+      <div class="modal fade" id="newPost" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content custom-form">
+            <div class="modal-body center-block">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+              <h1 class="custom-modal-title"><?= __("New post"); ?></h1>
+                <?php echo $this->Form->create('Post', array(
+                  "class" => "form-group",
+                  "action" => "add"
+                )); ?>
+                    <fieldset>
+                        <div class="form-group">
+                        <?php echo $this->Form->input('title',array(
+                            "class" => "form-control input-lg",
+                            "placeholder" => __("Title"),
+                            "label" => false
+                        ));?>
+                        </div>
+                        <div class="form-group">
+                        <?php echo $this->Form->input('content',array(
+                            "type" => "textarea",
+                            "placeholder" => __("Content"),
+                            "class" => "form-control input-lg",
+                            "label" => false
+                        ));?>
+                        </div>
+                        <div class="form-group">
+                        <?php echo $this->Form->button(__("Submit"),array(
+                            "class" => "btn btn-primary btn-lg btn-block custom-btn",
+                            "type" => "submit"
+                        ));?>
+                        </div>
+                    </fieldset>
+                        <?php echo $this->Form->end(); ?>
+              </div>
+            </div>
+          </div>
+      </div>
+      <?php } ?>
     </div>
   </body>
 </html>

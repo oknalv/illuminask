@@ -21,37 +21,45 @@
     	public function add() {
 	        if ($this->request->is('post')) {
 	        	$this->request->data['Post']['date']=date("Y-m-d H:i:s");
+	        	$this->request->data['Post']['user_id']=$this->Session->read("Auth.User.id");
 	            if ($this->Post->save($this->request->data)) {
 	                $this->Flash->success('Your post has been published');
+	        		$this->redirect(array('action' => 'view', $this->Post->getId()));
 	            }
 	            else{
 	                $this->Flash->error('Your post could not been published');
+	        		$this->redirect(array('action' => 'index'));
 	            }
 	        }
-	        $this->redirect(array('action' => 'index'));
 	    }
 
 		public function edit($id = null) {
 		    if (!$id) {
-		        throw new NotFoundException(__('Invalid post'));
+		        $this->Flash->error('Invalid post');
+	        	$this->redirect(array('action' => 'index'));
 		    }
 
 		    $post = $this->Post->findById($id);
 		    if (!$post) {
-		        throw new NotFoundException(__('Invalid post'));
+		        $this->Flash->error('Invalid post');
+	        	$this->redirect(array('action' => 'index'));
 		    }
 
-		    if ($this->request->is(array('post', 'put'))) {
+		    if ($this->request->is(array('post'))) {
 		        $this->Post->id = $id;
+	        	$this->request->data['Post']['user_id']=$this->Session->read("Auth.User.id");
+	        	if(!$this->Post->hasAny(array(
+	        		"user_id" => $this->Session->read("Auth.User.id"),
+	        		"id" => $id))){
+			        $this->Flash->error('You are not the owner of this post');
+		        	$this->redirect(array('action' => 'index'));
+	        	}
 		        if ($this->Post->save($this->request->data)) {
-		            $this->Flash->success(__('Your post has been updated'));
-		            return $this->redirect(array('action' => 'index'));
+		            $this->Flash->success('Your post has been updated');
+	        		$this->redirect(array('action' => 'view', $this->Post->getId()));
 		        }
-		        $this->Flash->error(__('Unable to update your post'));
-		    }
-
-		    if (!$this->request->data) {
-		        $this->request->data = $post;
+		        $this->Flash->error('Unable to update your post');
+	        	$this->redirect(array('action' => 'view', $this->Post->getId()));
 		    }
 		}
 

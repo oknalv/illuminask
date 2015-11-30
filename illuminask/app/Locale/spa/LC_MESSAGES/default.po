@@ -139,3 +139,24 @@ msgstr "El usuario no se ha podido crear, inténtalo de nuevo"
 
 msgid "The user already exists"
 msgstr "El usuario ya existe"
+
+msgid "new post"
+msgstr "nuevo post"
+
+msgid "New post"
+msgstr "Nuevo post"
+
+msgid "Title"
+msgstr "Título"
+
+msgid "Content"
+msgstr "Contenido"
+
+msgid "Submit"
+msgstr "Enviar"
+
+msgid "You are not the owner of this post"
+msgstr "No eres el propietario del post"
+
+msgid "Invalid post"
+msgstr "Post inválido"

@@ -138,3 +138,24 @@ msgstr ""
 
 msgid "The user already exists"
 msgstr ""
+
+msgid "new post"
+msgstr ""
+
+msgid "New post"
+msgstr ""
+
+msgid "Title"
+msgstr ""
+
+msgid "Content"
+msgstr ""
+
+msgid "Submit"
+msgstr ""
+
+msgid "You are not the owner of this post"
+msgstr ""
+
+msgid "Invalid post"
+msgstr ""
