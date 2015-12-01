@@ -321,8 +321,8 @@ textarea{
 }
 
 .custom-input-form{
-	width:55px;
-	height: 35px;
+	/*width:55px;
+	height: 35px;*/
 	font-size: 15px;
 	background-color: #6f5499;
 	color:#f2f2f2;

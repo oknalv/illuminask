@@ -61,7 +61,38 @@
         ?>
     </h3>
   </div>
-  <div class=" col-xs-12 col-sd-12 col-md-12 custom-line-separator"><!--div separador, aunque era mejor un hr creo-->
+  <div class="col-xs-12 col-sd-12 col-md-12 custom-line-separator">
+    <hr/>
+  </div>
+  <div><!-- nueva respuesta-->
+    <?php if(AuthComponent::user('id')) { ?>
+      <?php echo $this->Form->create('Response', array(
+        "class" => "form-group",
+        "action" => "add"
+        )); ?>
+        <h4><?= __("Enter a response (it is necessary to be logged in)"); ?></h4>
+        <div class="form-group">
+        <?php echo $this->Form->input('content',array(
+            "type" => "textarea",
+            "class" => "form-control input-lg",
+            "label" => false
+        ));?>
+        </div>
+        <div class="form-group col-xs-12 col-sm-4 col-lg-3 col-xl-2">
+          <?php echo $this->Form->button(__("Send"),array(
+              "class" => "custom-input-form col-xs-6 col-sm-6 col-lg-6",
+              "type" => "submit"
+          ));?>
+          <?php echo $this->Form->button(__("Reset"),array(
+              "class" => "custom-input-form col-xs-6 col-sm-6 col-lg-6",
+              "type" => "reset"
+          ));?>
+          <?php echo $this->Form->input("post_id",array("value" => $post['Post']['id'], "type" => "hidden")); ?>
+        </div>
+      <?php echo $this->Form->end(); ?>
+    <?php } else { ?>
+        <h4><a href ="#" class="custom-comment-link" data-toggle="modal" data-target="#login"> To enter a response, please log in</a></h4>
+    <?php } ?>
   </div>
   <div><!-- div respuestas-->
     <?php foreach($post['Response'] as $response){ ?>

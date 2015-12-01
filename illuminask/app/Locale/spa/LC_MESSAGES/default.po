@@ -165,10 +165,25 @@ msgid "Asked %s"
 msgstr "Preguntado %s"
 
 msgid "Answered %s"
-msgstr "Resopondido %s"
+msgstr "Respondido %s"
 
 msgid "%s answers"
 msgstr "%s respuestas"
 
 msgid "%s answer"
 msgstr "%s respuesta"
+
+msgid "Enter a response (it is necessary to be logged in)"
+msgstr "Introduce tu respuesta (es necesario iniciar sesión)"
+
+msgid "Send"
+msgstr "Enviar"
+
+msgid "Reset"
+msgstr "Borrar"
+
+msgid "Your response could not been published"
+msgstr "Tu respuesta no se ha podido publicar"
+
+msgid "Your response has been published"
+msgstr "Tu respuesta ha sido publicada"
