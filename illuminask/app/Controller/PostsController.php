@@ -5,9 +5,43 @@
     	public $components = array('Flash','Session');
     	public $uses = array("Post","PostVisit");
 
-  		public function index() {
+  		public function index($sort = null) {
 				$this->layout= 'main';
-				$posts = $this->Post->find("all", array('order' => 'Post.date DESC'));
+				if($sort == null)
+					$sort = 'newest';
+				$this->set('sort',$sort);
+				switch($sort){
+					case 'newest':
+						$posts = $this->Post->find("all", array('order' => 'Post.date DESC'));
+						break;
+					case 'today':
+						$interval = new DateInterval("P1D");
+						$date = (new DateTime())->sub($interval);
+						$posts = $this->Post->find("all", array(
+							'conditions' => array("Post.date >=" => $date->format("Y-m-d H:i:s")),
+							'order' => 'Post.date DESC'));
+						break;
+					case 'week':
+						$interval = new DateInterval("P1W");
+						$date = (new DateTime())->sub($interval);
+						$posts = $this->Post->find("all", array(
+							'conditions' => array("Post.date >=" => $date->format("Y-m-d H:i:s")),
+							'order' => 'Post.date DESC'));
+						break;
+					case 'month':
+						$interval = new DateInterval("P1M");
+						$date = (new DateTime())->sub($interval);
+						$posts = $this->Post->find("all", array(
+							'conditions' => array("Post.date >=" => $date->format("Y-m-d H:i:s")),
+							'order' => 'Post.date DESC'));
+						break;
+					case 'voted':
+						$posts = $this->Post->find("all", array('order' => 'Post.date DESC'));
+						break;
+					default:
+						$this->redirect(array('action' => 'index'));
+						break;
+				}
         $this->set('posts', $posts);
     	}
 
@@ -31,8 +65,8 @@
 	        		$this->redirect(array('action' => 'view', $this->Post->getId()));
 	            }
 	            else{
-	                $this->Flash->error('Your post could not been published');
-	        		$this->redirect(array('action' => 'index'));
+	              $this->Flash->error('Your post could not been published');
+	        			$this->redirect(array('action' => 'index'));
 	            }
 	        }
 	    }

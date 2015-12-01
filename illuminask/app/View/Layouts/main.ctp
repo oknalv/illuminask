@@ -81,11 +81,41 @@
         <div id="menu" class="col-sm-3 col-md-2 hidden-xs custom-menu affix">
           <div class="custom-title"><?= __("Categories"); ?></div>
           <ul class="nav nav-pills nav-stacked">
-            <li class="active"><a href="#"><?= __("Newest"); ?></a></li>
-            <li><a href="#"><?= __("Today"); ?></a></li>
-            <li><a href="#"><?= __("Week"); ?></a></li>
-            <li><a href="#"><?= __("Month"); ?></a></li>
-            <li><a href="#"><?= __("Voted"); ?></a></li>
+            <?php
+              $selected=array("newest"=>"","today"=>"","week"=>"","month"=>"","voted"=>"");
+              if(isset($sort))
+                $selected[$sort] =" class='active'";
+            ?>
+            <li<?= $selected['newest']; ?>>
+              <?= $this->Html->link(__("Newest"), array(
+                'controller' => 'posts',
+                'action' => 'index', 'newest'
+              )); ?>
+            </li>
+            <li<?= $selected['today']; ?>>
+              <?= $this->Html->link(__("Today"), array(
+                'controller' => 'posts',
+                'action' => 'index', 'today'
+              )); ?>
+            </li>
+            <li<?= $selected['week']; ?>>
+              <?= $this->Html->link(__("Week"), array(
+                'controller' => 'posts',
+                'action' => 'index', 'week'
+              )); ?>
+            </li>
+            <li<?= $selected['month']; ?>>
+              <?= $this->Html->link(__("Month"), array(
+                'controller' => 'posts',
+                'action' => 'index', 'month'
+              )); ?>
+            </li>
+            <li<?= $selected['voted']; ?>>
+              <?= $this->Html->link(__("Voted"), array(
+                'controller' => 'posts',
+                'action' => 'index', 'voted'
+              )); ?>
+            </li>
           </ul>
         </div>
         <div id="cuerpo" class="col-xs-12 col-sm-9 col-md-10 custom-cuerpo">

@@ -172,7 +172,7 @@ msgstr ""
 msgid "%s answer"
 msgstr ""
 
-msgid "Enter a response (it is necessary to be logged in)"
+msgid "Enter a response"
 msgstr ""
 
 msgid "Send"
@@ -185,4 +185,7 @@ msgid "Your response could not been published"
 msgstr ""
 
 msgid "Your response has been published"
+msgstr ""
+
+msgid "To enter a response, please log in"
 msgstr ""

@@ -173,8 +173,8 @@ msgstr "%s respuestas"
 msgid "%s answer"
 msgstr "%s respuesta"
 
-msgid "Enter a response (it is necessary to be logged in)"
-msgstr "Introduce tu respuesta (es necesario iniciar sesión)"
+msgid "Enter a response"
+msgstr "Introduce tu respuesta"
 
 msgid "Send"
 msgstr "Enviar"
@@ -187,3 +187,6 @@ msgstr "Tu respuesta no se ha podido publicar"
 
 msgid "Your response has been published"
 msgstr "Tu respuesta ha sido publicada"
+
+msgid "To enter a response, please log in"
+msgstr "Para responder, por favor inicia sesión"

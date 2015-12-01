@@ -70,7 +70,7 @@
         "class" => "form-group",
         "action" => "add"
         )); ?>
-        <h4><?= __("Enter a response (it is necessary to be logged in)"); ?></h4>
+        <h4><?= __("Enter a response"); ?></h4>
         <div class="form-group">
         <?php echo $this->Form->input('content',array(
             "type" => "textarea",
@@ -91,7 +91,7 @@
         </div>
       <?php echo $this->Form->end(); ?>
     <?php } else { ?>
-        <h4><a href ="#" class="custom-comment-link" data-toggle="modal" data-target="#login"> To enter a response, please log in</a></h4>
+        <h4><a href ="#" class="custom-comment-link" data-toggle="modal" data-target="#login"><?= __("To enter a response, please log in"); ?></a></h4>
     <?php } ?>
   </div>
   <div><!-- div respuestas-->
