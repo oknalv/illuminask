@@ -160,3 +160,15 @@ msgstr "No eres el propietario del post"
 
 msgid "Invalid post"
 msgstr "Post inválido"
+
+msgid "Asked %s"
+msgstr "Preguntado %s"
+
+msgid "Answered %s"
+msgstr "Resopondido %s"
+
+msgid "%s answers"
+msgstr "%s respuestas"
+
+msgid "%s answer"
+msgstr "%s respuesta"

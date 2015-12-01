@@ -5,5 +5,6 @@
 
 		public $name = 'Response';
 		public $belongsTo = 'User';
+		public $hasMany = 'ResponseVote';
 
 	}

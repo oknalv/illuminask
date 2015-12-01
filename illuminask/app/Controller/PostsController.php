@@ -1,21 +1,25 @@
 <?php
 	class PostsController extends AppController {
 
-  		public $helpers = array('Html', 'Form', 'Flash');
+  		public $helpers = array('Html', 'Form', 'Flash', 'Votes');
     	public $components = array('Flash','Session');
     	public $uses = array("Post","PostVisit");
 
   		public function index() {
-			$this->layout= 'main';
-			$posts = $this->Post->find("all");
-        	$this->set('posts', $posts);
+				$this->layout= 'main';
+				$posts = $this->Post->find("all", array('order' => 'Post.date DESC'));
+        $this->set('posts', $posts);
     	}
 
     	public function view($id = null) {
     		if(AuthComponent::user('id'))
     			$this->addVisit($id);
-			$this->layout= 'main';
-        	$this->set('post', $this->Post->findById($id));
+				$this->layout= 'main';
+        $this->set('post', $this->Post->find('first', array(
+					'conditions' => array(
+						'Post.id' => $id
+					),
+					'recursive' => 2)));
     	}
 
     	public function add() {

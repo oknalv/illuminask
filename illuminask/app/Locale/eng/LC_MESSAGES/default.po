@@ -159,3 +159,15 @@ msgstr ""
 
 msgid "Invalid post"
 msgstr ""
+
+msgid "Asked %s"
+msgstr ""
+
+msgid "Answered %s"
+msgstr ""
+
+msgid "%s answers"
+msgstr ""
+
+msgid "%s answer"
+msgstr ""
