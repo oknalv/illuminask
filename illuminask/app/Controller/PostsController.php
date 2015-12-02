@@ -10,38 +10,45 @@
 				if($sort == null)
 					$sort = 'newest';
 				$this->set('sort',$sort);
+				$find_params=array('order' =>'Post.date DESC');
+				$conditions = array();
+				if(isset($this->request->query['search'])){
+					$search = $this->request->query['search'];
+					$conditions['OR'] = array('Post.title like' => '%'.$search.'%',
+						'Post.content like' => '%'.$search.'%');
+				}
 				switch($sort){
 					case 'newest':
-						$posts = $this->Post->find("all", array('order' => 'Post.date DESC'));
+						if(!empty($conditions))
+							$find_params['conditions'] = $conditions;
 						break;
 					case 'today':
 						$interval = new DateInterval("P1D");
 						$date = (new DateTime())->sub($interval);
-						$posts = $this->Post->find("all", array(
-							'conditions' => array("Post.date >=" => $date->format("Y-m-d H:i:s")),
-							'order' => 'Post.date DESC'));
+						$conditions["Post.date >="] = $date->format("Y-m-d H:i:s");
+						$find_params["conditions"] = $conditions;
 						break;
 					case 'week':
 						$interval = new DateInterval("P1W");
 						$date = (new DateTime())->sub($interval);
-						$posts = $this->Post->find("all", array(
-							'conditions' => array("Post.date >=" => $date->format("Y-m-d H:i:s")),
-							'order' => 'Post.date DESC'));
+						$conditions["Post.date >="] = $date->format("Y-m-d H:i:s");
+						$find_params["conditions"] = $conditions;
 						break;
 					case 'month':
 						$interval = new DateInterval("P1M");
 						$date = (new DateTime())->sub($interval);
-						$posts = $this->Post->find("all", array(
-							'conditions' => array("Post.date >=" => $date->format("Y-m-d H:i:s")),
-							'order' => 'Post.date DESC'));
+						$conditions["Post.date >="] = $date->format("Y-m-d H:i:s");
+						$find_params["conditions"] = $conditions;
 						break;
 					case 'voted':
-						$posts = $this->Post->find("all", array('order' => 'Post.date DESC'));
+						if(!empty($conditions))
+							$find_params['conditions'] = $conditions;
 						break;
 					default:
 						$this->redirect(array('action' => 'index'));
 						break;
 				}
+				$posts = $this->Post->find("all", $find_params);
         $this->set('posts', $posts);
     	}
 

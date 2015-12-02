@@ -29,16 +29,29 @@
             </a>
           </div>
           <div class="hidden-xs">
-            <form class="navbar-form navbar-right" role="search">
+              <?php
+              if(!isset($sort)) $sort = "";
+              echo $this->Form->create("Post", array(
+                "class" => "navbar-form navbar-right",
+                "type" => "get",
+                "role" => "search",
+                "action" => "index/$sort"
+              ));?>
               <div class="input-group">
-                <input type="text" class="form-control custom-search-input" placeholder="<?= __('search');?>">
+                <?= $this->Form->input('search',array(
+                  "class" => "form-control custom-search-input",
+                  "placeholder" => __('search'),
+                  "label" => false,
+                  "div" => false
+                )); ?>
                 <span class="input-group-btn">
-                  <button type="submit" class="btn btn-default custom-search-btn">
-                    <i class="glyphicon glyphicon-search"></i>
-                  </button>
+                  <?= $this->Form->button("<i class='glyphicon glyphicon-search'></i>", array(
+                    "class" => "btn btn-default custom-search-btn",
+                    "type" => "submit"
+                  )); ?>
                 </span>
               </div>
-            </form>
+              <?= $this->Form->end(); ?>
             <ul class="nav navbar-nav navbar-right">
               <?php if(AuthComponent::user('id')) { ?>
                 <li><a href="#" class="custom-navbar-a custom-btn" data-toggle="modal" data-target="#newPost"><?= __("new post");?></a></li>
