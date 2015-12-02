@@ -12,9 +12,53 @@
     </div>
     <div class="col-xs-12 col-sm-12 col-md-12"><!--div manos y cuerpo-->
       <div class="col-xs-1 col-sm-1 col-md-1 col-md-1 custom-votes"><!-- div manitos-->
-        <div><i class="glyphicon glyphicon-hand-up custom-glyphicon-votes"></i></div>
-        <div class="custom-votes-number"><?= $this->Votes->calculate($post["PostVote"]);?></div>
-        <div><i class="glyphicon glyphicon-hand-down custom-glyphicon-votes"></i></div>
+        <?php if(!AuthComponent::user("id") || $post['User']['id'] == $this->Session->read("Auth.User.id")){ ?>
+          <div><i class="glyphicon glyphicon-hand-up custom-glyphicon-votes"></i></div>
+          <div class="custom-votes-number"><?= $this->Votes->calculate($post["PostVote"]);?></div>
+          <div><i class="glyphicon glyphicon-hand-down custom-glyphicon-votes"></i></div>
+        <?php } else {
+          $upvoted = false;
+          $downvoted = false;
+          foreach($post['PostVote'] as $vote){
+            if($vote['user_id'] == $this->Session->read("Auth.User.id")){
+              if($vote['liked']==1)
+                $upvoted = true;
+              else
+                $downvoted = true;
+              break;
+            }
+          }?>
+          <div>
+            <?php if(!$upvoted)
+              echo $this->Html->link(
+                "<i class='glyphicon glyphicon-hand-up custom-glyphicon-votes'></i>",array(
+                'controller' => 'post_votes',
+                'action' => 'upvote', $post['Post']['id']
+                ), array("escape" => false)
+              );
+            else
+              echo $this->Html->link("<i class='glyphicon glyphicon-hand-up custom-glyphicon-votes custom-voted'></i>",array(
+                'controller' => 'post_votes',
+                'action' => 'remove', $post['Post']['id']
+              ), array("escape" => false)
+            ); ?>
+          </div>
+          <div class="custom-votes-number"><?= $this->Votes->calculate($post["PostVote"]);?></div>
+          <div>
+            <?php if(!$downvoted)
+              echo $this->Html->link("<i class='glyphicon glyphicon-hand-down custom-glyphicon-votes'></i>",array(
+                'controller' => 'post_votes',
+                'action' => 'downvote', $post['Post']['id']
+              ), array("escape" => false)
+            );
+            else
+              echo $this->Html->link("<i class='glyphicon glyphicon-hand-down custom-glyphicon-votes custom-voted'></i>",array(
+                'controller' => 'post_votes',
+                'action' => 'remove', $post['Post']['id']
+              ), array("escape" => false)
+            ); ?>
+            </div>
+        <?php } ?>
       </div>
       <div class="col-xs-11 col-sm-11 col-md-11 custom-question-description"><!-- div cuerpo-pregunta-->
           <?php echo $post['Post']['content']?>

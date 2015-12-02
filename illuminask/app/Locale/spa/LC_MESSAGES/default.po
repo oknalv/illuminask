@@ -190,3 +190,6 @@ msgstr "Tu respuesta ha sido publicada"
 
 msgid "To enter a response, please log in"
 msgstr "Para responder, por favor inicia sesión"
+
+msgid "You cannot vote your own post"
+msgstr "No puedes votar tu propio post"

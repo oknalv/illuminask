@@ -189,3 +189,6 @@ msgstr ""
 
 msgid "To enter a response, please log in"
 msgstr ""
+
+msgid "You cannot vote your own post"
+msgstr ""

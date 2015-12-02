@@ -479,3 +479,7 @@ textarea{
 hr {
 	border-color: #6f5499;
 }
+
+.custom-voted, .custom-voted:hover{
+	color: #6f5499;
+}
