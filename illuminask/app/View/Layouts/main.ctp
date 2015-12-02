@@ -148,14 +148,29 @@
             <div class="modal-body">
               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
               <h4 class="modal-title custom-modal-title"><?= __("Menu"); ?></h4>
-              <div class="input-group">
-                <input type="text" class="form-control custom-search-input" placeholder="<?= __("search"); ?>">
-                <span class="input-group-btn">
-                  <button type="submit" class="btn btn-default custom-search-btn">
-                    <i class="glyphicon glyphicon-search"></i>
-                  </button>
-                </span>
-              </div>
+                  <?php
+                  if(!isset($sort)) $sort = "";
+                  echo $this->Form->create("Post", array(
+                    "class" => "navbar-form navbar-right",
+                    "type" => "get",
+                    "role" => "search",
+                    "action" => "index/$sort"
+                  ));?>
+                  <div class="input-group">
+                    <?= $this->Form->input('search',array(
+                      "class" => "form-control custom-search-input",
+                      "placeholder" => __('search'),
+                      "label" => false,
+                      "div" => false
+                    )); ?>
+                    <span class="input-group-btn">
+                      <?= $this->Form->button("<i class='glyphicon glyphicon-search'></i>", array(
+                        "class" => "btn btn-default custom-search-btn",
+                        "type" => "submit"
+                      )); ?>
+                    </span>
+                  </div>
+                  <?= $this->Form->end(); ?>
               <div class="container-fluid">
                 <ul class="nav navbar-nav">
                   <?php if(AuthComponent::user('id')) { ?>
