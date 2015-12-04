@@ -54,7 +54,7 @@
               <?= $this->Form->end(); ?>
             <ul class="nav navbar-nav navbar-right">
               <?php if(AuthComponent::user('id')) { ?>
-                <li><a href="#" class="custom-navbar-a custom-btn" data-toggle="modal" data-target="#newPost"><?= __("new post");?></a></li>
+                <li><a href="#" class="custom-navbar-a custom-btn" data-toggle="modal" data-target="#newPost"><?= __("new question");?></a></li>
                 <li>
                   <?= $this->Html->link(__("log out"), array(
                     'controller' => 'users',
@@ -174,7 +174,7 @@
               <div class="container-fluid">
                 <ul class="nav navbar-nav">
                   <?php if(AuthComponent::user('id')) { ?>
-                    <li class="col-xs-6"><a href="#" data-toggle="modal" data-target="#newPost" class="custom-navbar-a custom-btn"><?= __("new post");?></a></li>
+                    <li class="col-xs-6"><a href="#" data-toggle="modal" data-target="#newPost" class="custom-navbar-a custom-btn"><?= __("new question");?></a></li>
                     <li class="col-xs-6">
                       <?= $this->Html->link(__("log out"), array(
                         'controller' => 'users',
@@ -329,7 +329,7 @@
           <div class="modal-content custom-form">
             <div class="modal-body center-block">
               <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-              <h1 class="custom-modal-title"><?= __("New post"); ?></h1>
+              <h1 class="custom-modal-title"><?= __("New question"); ?></h1>
                 <?php echo $this->Form->create('Post', array(
                   "class" => "form-group",
                   "action" => "add"

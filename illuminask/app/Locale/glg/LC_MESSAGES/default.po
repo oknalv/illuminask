@@ -2,13 +2,13 @@ msgid "by %s"
 msgstr "por %s"
 
 msgid "%s ago"
-msgstr "hace %s"
+msgstr "fai %s"
 
 msgid "search"
 msgstr "buscar"
 
 msgid "sign up"
-msgstr "registrarse"
+msgstr "rexistrarse"
 
 msgid "log in"
 msgstr "iniciar sesión"
@@ -18,10 +18,10 @@ msgid "Categories"
 msgstr "Categorías"
 
 msgid "Newest"
-msgstr "Nuevos"
+msgstr "Novos"
 
 msgid "Today"
-msgstr "Hoy"
+msgstr "Hoxe"
 
 msgid "Week"
 msgstr "Semana"
@@ -30,22 +30,22 @@ msgid "Month"
 msgstr "Mes"
 
 msgid "Voted"
-msgstr "Más votados"
+msgstr "Máis votados"
 
 msgid "Menu"
 msgstr "Menú"
 
 msgid "Register"
-msgstr "Registrarse"
+msgstr "Rexistrarse"
 
 msgid "User Name"
-msgstr "Nombre de usuario"
+msgstr "Nome de usuario"
 
 msgid "Password"
-msgstr "Contraseña"
+msgstr "Contrasinal"
 
 msgid "Confirm Password"
-msgstr "Confirmar contraseña"
+msgstr "Confirmar contrasinal"
 
 msgid "Email"
 msgstr "Correo electrónico"
@@ -57,19 +57,19 @@ msgid "votes"
 msgstr "votos"
 
 msgid "answers"
-msgstr "respuestas"
+msgstr "respostas"
 
 msgid "views"
 msgstr "visitas"
 
 msgid "Add a comment"
-msgstr "Añadir un comentario"
+msgstr "Engadir un comentario"
 
 msgid "%s year"
-msgstr "%s año"
+msgstr "%s ano"
 
 msgid "%s years"
-msgstr "%s años"
+msgstr "%s anos"
 
 msgid "%s month"
 msgstr "%s mes"
@@ -102,7 +102,7 @@ msgid "%s seconds"
 msgstr "%s segundos"
 
 msgid "log out"
-msgstr "cerrar sesión"
+msgstr "pechar sesión"
 
 msgid "language"
 msgstr "idioma"
@@ -114,49 +114,49 @@ msgid "Login successful"
 msgstr "Inicio de sesión correcto"
 
 msgid "Your question has been published"
-msgstr "Tu pregunta ha sido publicada"
+msgstr "A túa pregunta foi publicada"
 
 msgid "Your question has been updated"
-msgstr "Tu pregunta ha sido actualizada"
+msgstr "A túa pregunta foi actualizada"
 
 msgid "Unable to update your question"
-msgstr "No se puede actualizar tu pregunta"
+msgstr "Non se pode actualizar a túa pregunta"
 
 msgid "The question has been deleted"
-msgstr "La pregunta ha sido borrado"
+msgstr "A pregunta foi borrado"
 
 msgid "Your question could not been published"
-msgstr "Tu pregunta no se ha podido publicar"
+msgstr "A túa pregunta non se puido publicar"
 
 msgid "Invalid username or password, try again"
-msgstr "Usuario o contraseña incorrectos, inténtalo de nuevo"
+msgstr "Usuario ou contrasinal incorrectos, inténtao de novo"
 
 msgid "The user has been created"
-msgstr "El usuario ha sido creado"
+msgstr "O usuario foi creado"
 
 msgid "The user could not be created, try again"
-msgstr "El usuario no se ha podido crear, inténtalo de nuevo"
+msgstr "O usuario non se puido crear, inténtao de novo"
 
 msgid "The user already exists"
-msgstr "El usuario ya existe"
+msgstr "O usuario xa existe"
 
 msgid "new question"
-msgstr "nueva pregunta"
+msgstr "nova pregunta"
 
 msgid "New question"
-msgstr "Nueva pregunta"
+msgstr "Nova pregunta"
 
 msgid "Title"
 msgstr "Título"
 
 msgid "Content"
-msgstr "Contenido"
+msgstr "Contido"
 
 msgid "Submit"
 msgstr "Enviar"
 
 msgid "You are not the owner of this question"
-msgstr "No eres el propietario de la pregunta"
+msgstr "Non es o propietario da pregunta"
 
 msgid "Invalid question"
 msgstr "Pregunta inválida"
@@ -168,13 +168,13 @@ msgid "Answered %s"
 msgstr "Respondido %s"
 
 msgid "%s answers"
-msgstr "%s respuestas"
+msgstr "%s respostas"
 
 msgid "%s answer"
-msgstr "%s respuesta"
+msgstr "%s resposta"
 
 msgid "Enter a response"
-msgstr "Introduce tu respuesta"
+msgstr "Introduce a túa resposta"
 
 msgid "Send"
 msgstr "Enviar"
@@ -183,16 +183,16 @@ msgid "Reset"
 msgstr "Borrar"
 
 msgid "Your response could not been published"
-msgstr "Tu respuesta no se ha podido publicar"
+msgstr "A túa resposta non se puido publicar"
 
 msgid "Your response has been published"
-msgstr "Tu respuesta ha sido publicada"
+msgstr "A túa resposta foi publicada"
 
 msgid "To enter a response, please log in"
 msgstr "Para responder, por favor inicia sesión"
 
 msgid "You cannot vote your own question"
-msgstr "No puedes votar tu propia pregunta"
+msgstr "Non podes votar a túa propia pregunta"
 
 msgid "You cannot vote your own response"
-msgstr "No puedes votar tu propia respuesta"
+msgstr "Non podes votar a túa propia resposta"

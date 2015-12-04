@@ -5,7 +5,7 @@ msgid "%s ago"
 msgstr "hace %s"
 
 msgid "search"
-msgstr "buscar"
+msgstr "chercher"
 
 msgid "sign up"
 msgstr "registrarse"
@@ -18,22 +18,22 @@ msgid "Categories"
 msgstr "Categorías"
 
 msgid "Newest"
-msgstr "Nuevos"
+msgstr "Nouveaux"
 
 msgid "Today"
-msgstr "Hoy"
+msgstr "Aujourd'hui"
 
 msgid "Week"
-msgstr "Semana"
+msgstr "Semaine"
 
 msgid "Month"
-msgstr "Mes"
+msgstr "Mois"
 
 msgid "Voted"
 msgstr "Más votados"
 
 msgid "Menu"
-msgstr "Menú"
+msgstr "Menu"
 
 msgid "Register"
 msgstr "Registrarse"
@@ -66,46 +66,46 @@ msgid "Add a comment"
 msgstr "Añadir un comentario"
 
 msgid "%s year"
-msgstr "%s año"
+msgstr "%s an"
 
 msgid "%s years"
-msgstr "%s años"
+msgstr "%s ans"
 
 msgid "%s month"
-msgstr "%s mes"
+msgstr "%s mois"
 
 msgid "%s months"
-msgstr "%s meses"
+msgstr "%s mois"
 
 msgid "%s day"
-msgstr "%s día"
+msgstr "%s jour"
 
 msgid "%s days"
-msgstr "%s días"
+msgstr "%s jours"
 
 msgid "%s hour"
-msgstr "%s hora"
+msgstr "%s heure"
 
 msgid "%s hours"
-msgstr "%s horas"
+msgstr "%s heures"
 
 msgid "%s minute"
-msgstr "%s minuto"
+msgstr "%s minute"
 
 msgid "%s minutes"
-msgstr "%s minutos"
+msgstr "%s minutes"
 
 msgid "%s second"
-msgstr "%s segundo"
+msgstr "%s seconde"
 
 msgid "%s seconds"
-msgstr "%s segundos"
+msgstr "%s seconde"
 
 msgid "log out"
 msgstr "cerrar sesión"
 
 msgid "language"
-msgstr "idioma"
+msgstr "langue"
 
 msgid "Change language"
 msgstr "Cambiar idioma"
@@ -141,10 +141,10 @@ msgid "The user already exists"
 msgstr "El usuario ya existe"
 
 msgid "new question"
-msgstr "nueva pregunta"
+msgstr "nouveau question"
 
 msgid "New question"
-msgstr "Nueva pregunta"
+msgstr "Nouveau question"
 
 msgid "Title"
 msgstr "Título"

@@ -6,7 +6,7 @@
     public function upvote($postId = null){
       $user = $this->Session->read("Auth.User.id");
 			if($this->Post->hasAny(array('Post.id' => $postId, 'Post.user_id' => $user))){
-				$this->Flash->error("You cannot vote your own post");
+				$this->Flash->error("You cannot vote your own question");
 			}
 			else{
 				if($this->PostVote->hasAny(
@@ -24,7 +24,7 @@
     public function downvote($postId = null){
       $user = $this->Session->read("Auth.User.id");
 			if($this->Post->hasAny(array('Post.id' => $postId, 'Post.user_id' => $user))){
-				$this->Flash->error("You cannot vote your own post");
+				$this->Flash->error("You cannot vote your own question");
 			}
 			else{
 				if($this->PostVote->hasAny(
@@ -43,7 +43,7 @@
     public function remove($postId = null){
       $user = $this->Session->read("Auth.User.id");
 			if($this->Post->hasAny(array('Post.id' => $postId, 'Post.user_id' => $user))){
-				$this->Flash->error("You cannot vote your own post");
+				$this->Flash->error("You cannot vote your own question");
 			}
 			else{
 				if($this->PostVote->hasAny(

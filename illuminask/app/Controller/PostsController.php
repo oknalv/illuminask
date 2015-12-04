@@ -68,11 +68,11 @@
 	        	$this->request->data['Post']['date']=date("Y-m-d H:i:s");
 	        	$this->request->data['Post']['user_id']=$this->Session->read("Auth.User.id");
 	            if ($this->Post->save($this->request->data)) {
-	                $this->Flash->success('Your post has been published');
+	                $this->Flash->success('Your question has been published');
 	        		$this->redirect(array('action' => 'view', $this->Post->getId()));
 	            }
 	            else{
-	              $this->Flash->error('Your post could not been published');
+	              $this->Flash->error('Your question could not been published');
 	        			$this->redirect(array('action' => 'index'));
 	            }
 	        }
@@ -80,13 +80,13 @@
 
 		public function edit($id = null) {
 		    if (!$id) {
-		        $this->Flash->error('Invalid post');
+		        $this->Flash->error('Invalid question');
 	        	$this->redirect(array('action' => 'index'));
 		    }
 
 		    $post = $this->Post->findById($id);
 		    if (!$post) {
-		        $this->Flash->error('Invalid post');
+		        $this->Flash->error('Invalid question');
 	        	$this->redirect(array('action' => 'index'));
 		    }
 
@@ -96,14 +96,14 @@
 	        	if(!$this->Post->hasAny(array(
 	        		"user_id" => $this->Session->read("Auth.User.id"),
 	        		"id" => $id))){
-			        $this->Flash->error('You are not the owner of this post');
+			        $this->Flash->error('You are not the owner of this question');
 		        	$this->redirect(array('action' => 'index'));
 	        	}
 		        if ($this->Post->save($this->request->data)) {
-		            $this->Flash->success('Your post has been updated');
+		            $this->Flash->success('Your question has been updated');
 	        		$this->redirect(array('action' => 'view', $this->Post->getId()));
 		        }
-		        $this->Flash->error('Unable to update your post');
+		        $this->Flash->error('Unable to update your question');
 	        	$this->redirect(array('action' => 'view', $this->Post->getId()));
 		    }
 		}
@@ -113,7 +113,7 @@
 		        throw new MethodNotAllowedException();
 		    }
 		    if ($this->Post->delete($id)) {
-		        $this->Flash->success('The post has been deleted');
+		        $this->Flash->success('The question has been deleted');
 		        $this->redirect(array('action' => 'index'));
 		    }
 		}

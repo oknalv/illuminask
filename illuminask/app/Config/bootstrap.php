@@ -112,5 +112,7 @@ CakeLog::config('error', array(
 
 Configure::write('Config.languages', array(
 	"eng" => "English",
-	"spa" => "Español"
+	"spa" => "Español",
+	"glg" => "Galego",
+	"fra" => "Français"
 ));

@@ -112,19 +112,19 @@ msgstr ""
 msgid "Login successful"
 msgstr ""
 
-msgid "Your post has been published"
+msgid "Your question has been published"
 msgstr ""
 
-msgid "Your post has been updated"
+msgid "Your question has been updated"
 msgstr ""
 
-msgid "Unable to update your post"
+msgid "Unable to update your question"
 msgstr ""
 
-msgid "The post has been deleted"
+msgid "The question has been deleted"
 msgstr ""
 
-msgid "Your post could not been published"
+msgid "Your question could not been published"
 msgstr ""
 
 msgid "Invalid username or password, try again"
@@ -139,10 +139,10 @@ msgstr ""
 msgid "The user already exists"
 msgstr ""
 
-msgid "new post"
+msgid "new question"
 msgstr ""
 
-msgid "New post"
+msgid "New question"
 msgstr ""
 
 msgid "Title"
@@ -154,10 +154,10 @@ msgstr ""
 msgid "Submit"
 msgstr ""
 
-msgid "You are not the owner of this post"
+msgid "You are not the owner of this question"
 msgstr ""
 
-msgid "Invalid post"
+msgid "Invalid question"
 msgstr ""
 
 msgid "Asked %s"
@@ -190,7 +190,7 @@ msgstr ""
 msgid "To enter a response, please log in"
 msgstr ""
 
-msgid "You cannot vote your own post"
+msgid "You cannot vote your own question"
 msgstr ""
 
 msgid "You cannot vote your own response"
