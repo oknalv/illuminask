@@ -123,7 +123,7 @@ msgid "Unable to update your question"
 msgstr "Non se pode actualizar a túa pregunta"
 
 msgid "The question has been deleted"
-msgstr "A pregunta foi borrado"
+msgstr "A pregunta foi borrada"
 
 msgid "Your question could not been published"
 msgstr "A túa pregunta non se puido publicar"
