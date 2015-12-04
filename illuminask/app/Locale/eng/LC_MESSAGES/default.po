@@ -192,3 +192,6 @@ msgstr ""
 
 msgid "You cannot vote your own post"
 msgstr ""
+
+msgid "You cannot vote your own response"
+msgstr ""
