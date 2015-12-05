@@ -1,0 +1,197 @@
+msgid "by %s"
+msgstr "von %s"
+
+msgid "%s ago"
+msgstr "vor %s"
+
+msgid "search"
+msgstr "suche"
+
+msgid "sign up"
+msgstr "registrieren"
+
+msgid "log in"
+msgstr "anmeldung"
+
+msgid "Categories"
+msgstr "Kategorien"
+
+msgid "Newest"
+msgstr "Neuester"
+
+msgid "Today"
+msgstr "Heute"
+
+msgid "Week"
+msgstr "Woche"
+
+msgid "Month"
+msgstr "Monat"
+
+msgid "Voted"
+msgstr "Meiste gewählt"
+
+msgid "Menu"
+msgstr "Menü"
+
+msgid "Register"
+msgstr "Register"
+
+msgid "User Name"
+msgstr "Benutzerkennung"
+
+msgid "Password"
+msgstr "Kennwort"
+
+msgid "Confirm Password"
+msgstr "Bestätigen Sie Kennwort"
+
+msgid "Email"
+msgstr "E-mail"
+
+msgid "Log in"
+msgstr "Anmeldung"
+
+msgid "votes"
+msgstr "stimmen"
+
+msgid "answers"
+msgstr "antworten"
+
+msgid "views"
+msgstr "besuche"
+
+msgid "Add a comment"
+msgstr "Fügen Sie eine Anmerkung hinzu "
+
+msgid "%s year"
+msgstr "%s jahr"
+
+msgid "%s years"
+msgstr "%s jahre"
+
+msgid "%s month"
+msgstr "%s monat"
+
+msgid "%s months"
+msgstr "%s monate"
+
+msgid "%s day"
+msgstr "%s tag"
+
+msgid "%s days"
+msgstr "%s tagen"
+
+msgid "%s hour"
+msgstr "%s stunde"
+
+msgid "%s hours"
+msgstr "%s stunden"
+
+msgid "%s minute"
+msgstr "%s minute"
+
+msgid "%s minutes"
+msgstr "%s minuten"
+
+msgid "%s second"
+msgstr "%s sekunde"
+
+msgid "%s seconds"
+msgstr "%s sekunden"
+
+msgid "log out"
+msgstr "abmelden"
+
+msgid "language"
+msgstr "sprache"
+
+msgid "Change language"
+msgstr "Änderungssprache"
+
+msgid "Login successful"
+msgstr "Erfolgreiche Anmeldung "
+
+msgid "Your question has been published"
+msgstr "Ihre Frage ist veröffentlicht worden"
+
+msgid "Your question has been updated"
+msgstr "Ihre Frage ist aktualisiert worden"
+
+msgid "Unable to update your question"
+msgstr "Unfähig, Ihre Frage zu aktualisieren"
+
+msgid "The question has been deleted"
+msgstr "Die Frage ist gelöscht worden"
+
+msgid "Your question could not been published"
+msgstr "Ihre Frage hat nicht gewesen veröffentlicht gekonnt"
+
+msgid "Invalid username or password, try again"
+msgstr "Ungültiger Benutzername oder Kennwort, noch einmal versuchen"
+
+msgid "The user has been created"
+msgstr "Der Benutzer ist geschaffen worden"
+
+msgid "The user could not be created, try again"
+msgstr "Der Benutzer konnte nicht geschaffen werden, noch einmal versuchen"
+
+msgid "The user already exists"
+msgstr "Der Benutzer besteht bereits"
+
+msgid "new question"
+msgstr "neue Frage"
+
+msgid "New question"
+msgstr "Neue Frage "
+
+msgid "Title"
+msgstr "Titel"
+
+msgid "Content"
+msgstr "Inhalt"
+
+msgid "Submit"
+msgstr "Einreichen"
+
+msgid "You are not the owner of this question"
+msgstr "Sie sind nicht der Eigentümer dieser Frage"
+
+msgid "Invalid question"
+msgstr "Ungültige Frage"
+
+msgid "Asked %s"
+msgstr "Gefragt %s"
+
+msgid "Answered %s"
+msgstr "Geantwortet %s"
+
+msgid "%s answers"
+msgstr "%s antworten"
+
+msgid "%s answer"
+msgstr "%s antwort"
+
+msgid "Enter a response"
+msgstr "Gehen Sie in eine Antwort ein"
+
+msgid "Send"
+msgstr "Senden"
+
+msgid "Reset"
+msgstr "Löschen"
+
+msgid "Your response could not been published"
+msgstr "Ihre Antwort hat nicht gewesen veröffentlicht gekonnt"
+
+msgid "Your response has been published"
+msgstr "Ihre Antwort ist veröffentlicht worden"
+
+msgid "To enter a response, please log in"
+msgstr "Um in eine Antwort einzugehen, loggen Sie bitte darin"
+
+msgid "You cannot vote your own question"
+msgstr "Sie können Ihre eigene Frage nicht wählen"
+
+msgid "You cannot vote your own response"
+msgstr "Sie können Ihre eigene Antwort nicht wählen"

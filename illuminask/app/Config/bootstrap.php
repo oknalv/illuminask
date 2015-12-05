@@ -114,5 +114,6 @@ Configure::write('Config.languages', array(
 	"eng" => "English",
 	"spa" => "Español",
 	"glg" => "Galego",
-	"fra" => "Français"
+	"fra" => "Français",
+	"deu" => "Deutsch"
 ));
