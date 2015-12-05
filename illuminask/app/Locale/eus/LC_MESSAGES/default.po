@@ -1,0 +1,197 @@
+msgid "by %s"
+msgstr "%s-ek eginda"
+
+msgid "%s ago"
+msgstr "orain dela %s"
+
+msgid "search"
+msgstr "bilaketa"
+
+msgid "sign up"
+msgstr "erregistratzea"
+
+msgid "log in"
+msgstr "saioa hasi"
+
+msgid "Categories"
+msgstr "Kategoriak"
+
+msgid "Newest"
+msgstr "Berriak"
+
+msgid "Today"
+msgstr "Gaur"
+
+msgid "Week"
+msgstr "Aste honetan"
+
+msgid "Month"
+msgstr "Hilabete honetan"
+
+msgid "Voted"
+msgstr "Gehien bozkatuena"
+
+msgid "Menu"
+msgstr "Menua"
+
+msgid "Register"
+msgstr "Erregistratzea"
+
+msgid "User Name"
+msgstr "Erabiltzaile izena"
+
+msgid "Password"
+msgstr "Pasahitza"
+
+msgid "Confirm Password"
+msgstr "Pasahitza egiaztatzea"
+
+msgid "Email"
+msgstr "Posta elektronikoa"
+
+msgid "Log in"
+msgstr "Saioa hasi"
+
+msgid "votes"
+msgstr "boto"
+
+msgid "answers"
+msgstr "erantzun"
+
+msgid "views"
+msgstr "bisita"
+
+msgid "Add a comment"
+msgstr "Iruzkina gehitu"
+
+msgid "%s year"
+msgstr "urtebete"
+
+msgid "%s years"
+msgstr "%s urte"
+
+msgid "%s month"
+msgstr "hilabete"
+
+msgid "%s months"
+msgstr "%s hilabete"
+
+msgid "%s day"
+msgstr "egun %s"
+
+msgid "%s days"
+msgstr "%s egun"
+
+msgid "%s hour"
+msgstr "ordu %s"
+
+msgid "%s hours"
+msgstr "%s ordu"
+
+msgid "%s minute"
+msgstr "minutu %s"
+
+msgid "%s minutes"
+msgstr "%s minutu"
+
+msgid "%s second"
+msgstr "segundu %s"
+
+msgid "%s seconds"
+msgstr "%s segundu"
+
+msgid "log out"
+msgstr "Saioa itxea"
+
+msgid "language"
+msgstr "hizkuntza"
+
+msgid "Change language"
+msgstr "Hizkuntza aldatzea"
+
+msgid "Login successful"
+msgstr "Saio-hasiera zuzena"
+
+msgid "Your question has been published"
+msgstr "Zure galdera argitaratu da"
+
+msgid "Your question has been updated"
+msgstr "Zure galdera eguneratu da"
+
+msgid "Unable to update your question"
+msgstr "Zure galdera ezin da argitaratu"
+
+msgid "The question has been deleted"
+msgstr "Galdera ezabatu da"
+
+msgid "Your question could not been published"
+msgstr "Zure galdera ezin izan da argitaratu"
+
+msgid "Invalid username or password, try again"
+msgstr "Erabiltzaile edo pasahitz okerrak, berriro ahalegindu"
+
+msgid "The user has been created"
+msgstr "Erabiltzailea sortu da"
+
+msgid "The user could not be created, try again"
+msgstr "Erabiltzailea ezin da sortu, berriro ahalegindu"
+
+msgid "The user already exists"
+msgstr "Erabitzailea erabilita dago"
+
+msgid "new question"
+msgstr "galdera berria"
+
+msgid "New question"
+msgstr "Galdera berria"
+
+msgid "Title"
+msgstr "Izenburua"
+
+msgid "Content"
+msgstr "Edukia"
+
+msgid "Submit"
+msgstr "Bidali"
+
+msgid "You are not the owner of this question"
+msgstr "Ez zara galderaren jabea"
+
+msgid "Invalid question"
+msgstr "Galdera baliogabea"
+
+msgid "Asked %s"
+msgstr "%s galdetuta"
+
+msgid "Answered %s"
+msgstr "%s erantzunda"
+
+msgid "%s answers"
+msgstr "%s erantzun"
+
+msgid "%s answer"
+msgstr "erantzun %s"
+
+msgid "Enter a response"
+msgstr "Idatz ezazu zure erantzuna"
+
+msgid "Send"
+msgstr "Bidali"
+
+msgid "Reset"
+msgstr "Ezabatu"
+
+msgid "Your response could not been published"
+msgstr "Zure erantzunan ezin izan da argitaratu"
+
+msgid "Your response has been published"
+msgstr "Zure erantzuna argitaratu da"
+
+msgid "To enter a response, please log in"
+msgstr "Erantzuteko, saioa hasi mesedez"
+
+msgid "You cannot vote your own question"
+msgstr "Ezin duzu zure galdera bozkatu"
+
+msgid "You cannot vote your own response"
+msgstr "Ezin duzu zure erantzuna bozkatu"

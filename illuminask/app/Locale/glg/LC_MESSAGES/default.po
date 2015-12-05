@@ -13,7 +13,6 @@ msgstr "rexistrarse"
 msgid "log in"
 msgstr "iniciar sesión"
 
-
 msgid "Categories"
 msgstr "Categorías"
 

@@ -1,191 +1,191 @@
 msgid "by %s"
-msgstr "por %s"
+msgstr "%slta"
 
 msgid "%s ago"
-msgstr "hace %s"
+msgstr "%s sitten"
 
 msgid "search"
-msgstr "buscar"
+msgstr "hae"
 
 msgid "sign up"
-msgstr "registrarse"
+msgstr "rekisteröidy"
 
 msgid "log in"
-msgstr "iniciar sesión"
+msgstr "kirjaudu sisään"
 
 msgid "Categories"
-msgstr "Categorías"
+msgstr "Kategoriat"
 
 msgid "Newest"
-msgstr "Nuevos"
+msgstr "Uusimmat"
 
 msgid "Today"
-msgstr "Hoy"
+msgstr "Tänään"
 
 msgid "Week"
-msgstr "Semana"
+msgstr "Tällä viikolla"
 
 msgid "Month"
-msgstr "Mes"
+msgstr "Tässä kuussa"
 
 msgid "Voted"
-msgstr "Más votados"
+msgstr "Äänestetyimmät"
 
 msgid "Menu"
-msgstr "Menú"
+msgstr "Valikko"
 
 msgid "Register"
-msgstr "Registrarse"
+msgstr "Rekisteröidy"
 
 msgid "User Name"
-msgstr "Nombre de usuario"
+msgstr "Käyttäjätunnus"
 
 msgid "Password"
-msgstr "Contraseña"
+msgstr "Salasana"
 
 msgid "Confirm Password"
-msgstr "Confirmar contraseña"
+msgstr "Vahvista salasana"
 
 msgid "Email"
-msgstr "Correo electrónico"
+msgstr "Sähköpostiosoite"
 
 msgid "Log in"
-msgstr "Iniciar sesión"
+msgstr "Kirjaudu sisään"
 
 msgid "votes"
-msgstr "votos"
+msgstr "ääntä"
 
 msgid "answers"
-msgstr "respuestas"
+msgstr "vastausta"
 
 msgid "views"
-msgstr "visitas"
+msgstr "näyttökertaa"
 
 msgid "Add a comment"
-msgstr "Añadir un comentario"
+msgstr "Lisää kommentti"
 
 msgid "%s year"
-msgstr "%s año"
+msgstr "vuosi"
 
 msgid "%s years"
-msgstr "%s años"
+msgstr "%s vuotta"
 
 msgid "%s month"
-msgstr "%s mes"
+msgstr "kuukausi"
 
 msgid "%s months"
-msgstr "%s meses"
+msgstr "%s kuukautta"
 
 msgid "%s day"
-msgstr "%s día"
+msgstr "päivä"
 
 msgid "%s days"
-msgstr "%s días"
+msgstr "%s päivää"
 
 msgid "%s hour"
-msgstr "%s hora"
+msgstr "tunti"
 
 msgid "%s hours"
-msgstr "%s horas"
+msgstr "%s tuntia"
 
 msgid "%s minute"
-msgstr "%s minuto"
+msgstr "minuutti"
 
 msgid "%s minutes"
-msgstr "%s minutos"
+msgstr "%s minuuttia"
 
 msgid "%s second"
-msgstr "%s segundo"
+msgstr "sekunti"
 
 msgid "%s seconds"
-msgstr "%s segundos"
+msgstr "%s sekuntia"
 
 msgid "log out"
-msgstr "cerrar sesión"
+msgstr "kirjaudu ulos"
 
 msgid "language"
-msgstr "idioma"
+msgstr "kieli"
 
 msgid "Change language"
-msgstr "Cambiar idioma"
+msgstr "Vaihda kieltä"
 
 msgid "Login successful"
-msgstr "Inicio de sesión correcto"
+msgstr "Kirjauduit sisään onnistuneesti"
 
 msgid "Your question has been published"
-msgstr "Tu pregunta ha sido publicada"
+msgstr "Kysymyksesi on julkaistu"
 
 msgid "Your question has been updated"
-msgstr "Tu pregunta ha sido actualizada"
+msgstr "Kysymyksesi on päivitetty"
 
 msgid "Unable to update your question"
-msgstr "No se puede actualizar tu pregunta"
+msgstr "Kysymyksesi päivittäminen epäonnistui"
 
 msgid "The question has been deleted"
-msgstr "La pregunta ha sido borrada"
+msgstr "Kysymys on poistettu"
 
 msgid "Your question could not been published"
-msgstr "Tu pregunta no se ha podido publicar"
+msgstr "Kysymyksesi julkaisu epäonnistui"
 
 msgid "Invalid username or password, try again"
-msgstr "Usuario o contraseña incorrectos, inténtalo de nuevo"
+msgstr "Virheellinen käyttäjätunnus tai salasana, yritä uudelleen"
 
 msgid "The user has been created"
-msgstr "El usuario ha sido creado"
+msgstr "Käyttäjätili on luotu"
 
 msgid "The user could not be created, try again"
-msgstr "El usuario no se ha podido crear, inténtalo de nuevo"
+msgstr "Käyttäjätilin luominen epäonnistui, yritä uudelleen"
 
 msgid "The user already exists"
-msgstr "El usuario ya existe"
+msgstr "Käyttäjätunnus on varattu"
 
 msgid "new question"
-msgstr "nueva pregunta"
+msgstr "uusi kysymys"
 
 msgid "New question"
-msgstr "Nueva pregunta"
+msgstr "Uusi kysymys"
 
 msgid "Title"
-msgstr "Título"
+msgstr "Otsikko"
 
 msgid "Content"
-msgstr "Contenido"
+msgstr "Sisältö"
 
 msgid "Submit"
-msgstr "Enviar"
+msgstr "Lähetä"
 
 msgid "You are not the owner of this question"
-msgstr "No eres el propietario de la pregunta"
+msgstr "Et ole tämän kysymyksen haltija"
 
 msgid "Invalid question"
-msgstr "Pregunta inválida"
+msgstr "Virheellinen kysymys"
 
 msgid "Asked %s"
-msgstr "Preguntado %s"
+msgstr "Kysytty %s"
 
 msgid "Answered %s"
-msgstr "Respondido %s"
+msgstr "Vastattu %s"
 
 msgid "%s answers"
-msgstr "%s respuestas"
+msgstr "%s vastausta"
 
 msgid "%s answer"
-msgstr "%s respuesta"
+msgstr "%s vastaus"
 
 msgid "Enter a response"
-msgstr "Introduce tu respuesta"
+msgstr "Kirjoita vastaus"
 
 msgid "Send"
-msgstr "Enviar"
+msgstr "Lähetä"
 
 msgid "Reset"
-msgstr "Borrar"
+msgstr "Tyhjennä"
 
 msgid "Your response could not been published"
-msgstr "Tu respuesta no se ha podido publicar"
+msgstr "Vastauksesi julkaisu epäonnistui"
 
 msgid "Your response has been published"
-msgstr "Tu respuesta ha sido publicada"
+msgstr "Vastauksesi on julkaistu"
 
 msgid "To enter a response, please log in"
 msgstr "Para responder, por favor inicia sesión"
