@@ -1,0 +1,197 @@
+msgid "by %s"
+msgstr "far %s"
+
+msgid "%s ago"
+msgstr "antaux %s"
+
+msgid "search"
+msgstr "sercxi"
+
+msgid "sign up"
+msgstr "registrigxi"
+
+msgid "log in"
+msgstr "ensaluti"
+
+msgid "Categories"
+msgstr "Kategorioj"
+
+msgid "Newest"
+msgstr "La plej novaj"
+
+msgid "Today"
+msgstr "Hodiaux"
+
+msgid "Week"
+msgstr "Cxi tiu semajno"
+
+msgid "Month"
+msgstr "Cxi tiu monato"
+
+msgid "Voted"
+msgstr "La plej vocxdonitaj"
+
+msgid "Menu"
+msgstr "Menuo"
+
+msgid "Register"
+msgstr "Registrigxi"
+
+msgid "User Name"
+msgstr "Salutnomo"
+
+msgid "Password"
+msgstr "Pasvorto"
+
+msgid "Confirm Password"
+msgstr "Ripetu pasvorton"
+
+msgid "Email"
+msgstr "Retadreso"
+
+msgid "Log in"
+msgstr "Ensaluti"
+
+msgid "votes"
+msgstr "vocxdonoj"
+
+msgid "answers"
+msgstr "respondoj"
+
+msgid "views"
+msgstr "vizitoj"
+
+msgid "Add a comment"
+msgstr "Skribi komenton"
+
+msgid "%s year"
+msgstr "%s jaro"
+
+msgid "%s years"
+msgstr "%s jaroj"
+
+msgid "%s month"
+msgstr "%s monato"
+
+msgid "%s months"
+msgstr "%s monatoj"
+
+msgid "%s day"
+msgstr "%s tago"
+
+msgid "%s days"
+msgstr "%s tagoj"
+
+msgid "%s hour"
+msgstr "%s horo"
+
+msgid "%s hours"
+msgstr "%s horoj"
+
+msgid "%s minute"
+msgstr "%s minuto"
+
+msgid "%s minutes"
+msgstr "%s minutoj"
+
+msgid "%s second"
+msgstr "%s sekundo"
+
+msgid "%s seconds"
+msgstr "%s sekundoj"
+
+msgid "log out"
+msgstr "elsaluti"
+
+msgid "language"
+msgstr "lingvo"
+
+msgid "Change language"
+msgstr "Sxangxi lingvon"
+
+msgid "Login successful"
+msgstr "Ensalutado sukcese"
+
+msgid "Your question has been published"
+msgstr "Via demando estis eldonita"
+
+msgid "Your question has been updated"
+msgstr "Via demando estis gxisdatigita"
+
+msgid "Unable to update your question"
+msgstr "Nekapabla gxisdatigi vian demandon"
+
+msgid "The question has been deleted"
+msgstr "La demando estis forigita"
+
+msgid "Your question could not be published"
+msgstr "Via demando ne povis eldoni"
+
+msgid "Invalid username or password, try again"
+msgstr "La salutnomo aux la pasvorto ne estas korektaj, reprovu"
+
+msgid "The user has been created"
+msgstr "La uzanto estis kreita"
+
+msgid "The user could not be created, try again"
+msgstr "La uzanto ne povis kreigxi, reprovu"
+
+msgid "The user already exists"
+msgstr "La uzanto jam ekzistas"
+
+msgid "new question"
+msgstr "nova demando"
+
+msgid "New question"
+msgstr "Nova demando"
+
+msgid "Title"
+msgstr "Titolo"
+
+msgid "Content"
+msgstr "Enhavo"
+
+msgid "Submit"
+msgstr "Sendi"
+
+msgid "You are not the owner of this question"
+msgstr "Vi ne estas la proprietulo de la demando"
+
+msgid "Invalid question"
+msgstr "Demando nevalida"
+
+msgid "Asked %s"
+msgstr "Demandita %s"
+
+msgid "Answered %s"
+msgstr "Respondita %s"
+
+msgid "%s answers"
+msgstr "%s respondoj"
+
+msgid "%s answer"
+msgstr "%s respondo"
+
+msgid "Enter a response"
+msgstr "Skribu vian respondon"
+
+msgid "Send"
+msgstr "Sendi"
+
+msgid "Reset"
+msgstr "Forigi"
+
+msgid "Your response could not been published"
+msgstr "Via respondo ne povis eldoni"
+
+msgid "Your response has been published"
+msgstr "Via respondo estis eldonita"
+
+msgid "To enter a response, please log in"
+msgstr "Bonvolu ensaluti por respondi"
+
+msgid "You cannot vote your own question"
+msgstr "Vi ne povas vocxdoni vian propran demandon"
+
+msgid "You cannot vote your own response"
+msgstr "Vi ne povas vocxdoni vian propran respondon"
