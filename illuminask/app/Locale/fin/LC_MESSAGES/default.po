@@ -188,13 +188,13 @@ msgid "Your response has been published"
 msgstr "Vastauksesi on julkaistu"
 
 msgid "To enter a response, please log in"
-msgstr "Para responder, por favor inicia sesión"
+msgstr "Lisätäksesi vastauksen, ole hyvä ja kirjaudu sisään"
 
 msgid "You cannot vote your own question"
-msgstr "No puedes votar tu propia pregunta"
+msgstr "Et voi äänestää omaa kysymystäsi"
 
 msgid "You cannot vote your own response"
-msgstr "No puedes votar tu propia respuesta"
+msgstr "Et voi äänestää omaa vastaustasi"
 
 msgid "Full name"
 msgstr "Koko nimi"
