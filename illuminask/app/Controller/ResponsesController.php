@@ -10,7 +10,7 @@
 	        		$this->redirect($this->referer());
 	            }
 	            else{
-	                $this->Flash->error('Your response could not been published');
+	                $this->Flash->error('Your response could not be published');
 	        		$this->redirect($this->referer());
 	            }
 	        }

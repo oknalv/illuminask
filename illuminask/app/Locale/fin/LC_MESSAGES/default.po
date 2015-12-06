@@ -124,7 +124,7 @@ msgstr "Kysymyksesi päivittäminen epäonnistui"
 msgid "The question has been deleted"
 msgstr "Kysymys on poistettu"
 
-msgid "Your question could not been published"
+msgid "Your question could not be published"
 msgstr "Kysymyksesi julkaisu epäonnistui"
 
 msgid "Invalid username or password, try again"
@@ -181,7 +181,7 @@ msgstr "Lähetä"
 msgid "Reset"
 msgstr "Tyhjennä"
 
-msgid "Your response could not been published"
+msgid "Your response could not be published"
 msgstr "Vastauksesi julkaisu epäonnistui"
 
 msgid "Your response has been published"

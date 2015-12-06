@@ -124,7 +124,7 @@ msgstr "Non se pode actualizar a túa pregunta"
 msgid "The question has been deleted"
 msgstr "A pregunta foi borrada"
 
-msgid "Your question could not been published"
+msgid "Your question could not be published"
 msgstr "A túa pregunta non se puido publicar"
 
 msgid "Invalid username or password, try again"
@@ -181,7 +181,7 @@ msgstr "Enviar"
 msgid "Reset"
 msgstr "Borrar"
 
-msgid "Your response could not been published"
+msgid "Your response could not be published"
 msgstr "A túa resposta non se puido publicar"
 
 msgid "Your response has been published"

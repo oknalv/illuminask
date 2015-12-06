@@ -124,7 +124,7 @@ msgstr ""
 msgid "The question has been deleted"
 msgstr ""
 
-msgid "Your question could not been published"
+msgid "Your question could not be published"
 msgstr ""
 
 msgid "Invalid username or password, try again"
@@ -181,7 +181,7 @@ msgstr ""
 msgid "Reset"
 msgstr ""
 
-msgid "Your response could not been published"
+msgid "Your response could not be published"
 msgstr ""
 
 msgid "Your response has been published"

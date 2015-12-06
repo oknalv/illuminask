@@ -124,7 +124,7 @@ msgstr "Zure galdera ezin da argitaratu"
 msgid "The question has been deleted"
 msgstr "Galdera ezabatu da"
 
-msgid "Your question could not been published"
+msgid "Your question could not be published"
 msgstr "Zure galdera ezin izan da argitaratu"
 
 msgid "Invalid username or password, try again"
@@ -181,7 +181,7 @@ msgstr "Bidali"
 msgid "Reset"
 msgstr "Ezabatu"
 
-msgid "Your response could not been published"
+msgid "Your response could not be published"
 msgstr "Zure erantzunan ezin izan da argitaratu"
 
 msgid "Your response has been published"

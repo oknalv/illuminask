@@ -72,7 +72,7 @@
 	        		$this->redirect(array('action' => 'view', $this->Post->getId()));
 	            }
 	            else{
-	              $this->Flash->error('Your question could not been published');
+	              $this->Flash->error('Your question could not be published');
 	        			$this->redirect(array('action' => 'index'));
 	            }
 	        }

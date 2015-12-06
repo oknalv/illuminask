@@ -124,7 +124,7 @@ msgstr "Nous ne pouvons pas actualiser vôtre question"
 msgid "The question has been deleted"
 msgstr "La question a été supprimé"
 
-msgid "Your question could not been published"
+msgid "Your question could not be published"
 msgstr "Nous ne pouvons pas publier vôtre question"
 
 msgid "Invalid username or password, try again"
@@ -181,7 +181,7 @@ msgstr "Envoyer"
 msgid "Reset"
 msgstr "Supprimer"
 
-msgid "Your response could not been published"
+msgid "Your response could not be published"
 msgstr "Nous ne pouvons pas publier vôtre réponse"
 
 msgid "Your response has been published"
