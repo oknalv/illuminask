@@ -7,4 +7,10 @@
 		public $belongsTo = 'User';
 		public $hasMany = 'ResponseVote';
 
+		public $validate = array(
+        'content' => array(
+            'rule' => 'notBlank'
+        )
+  	);
+
 	}
