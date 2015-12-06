@@ -10,7 +10,7 @@
                         <div class="form-group">
                         <?php echo $this->Form->input('name',array(
                             "class" => "form-control input-lg",
-                            "placeholder" => __("User Name"),
+                            "placeholder" => __("User name"),
                             "label" => false
                         ));?>
                         </div>

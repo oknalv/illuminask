@@ -37,7 +37,7 @@ msgstr "Menú"
 msgid "Register"
 msgstr "Registrarse"
 
-msgid "User Name"
+msgid "User name"
 msgstr "Nombre de usuario"
 
 msgid "Password"
@@ -195,3 +195,6 @@ msgstr "No puedes votar tu propia pregunta"
 
 msgid "You cannot vote your own response"
 msgstr "No puedes votar tu propia respuesta"
+
+msgid "Full name"
+msgstr "Nombre completo"

@@ -9,11 +9,9 @@
 				$this->Flash->error("You cannot vote your own response");
 			}
 			else{
-				if($this->ResponseVote->hasAny(
-					array('ResponseVote.user_id' => $user)
-					))
-					$this->ResponseVote->deleteAll(array('ResponseVote.user_id' => $user, 'ResponseVote.response_id' => $responseId));
+				$this->ResponseVote->deleteAll(array('ResponseVote.user_id' => $user, 'ResponseVote.response_id' => $responseId));
 				$this->ResponseVote->save(array('user_id' => $user, 'response_id' => $responseId, 'liked' => 1));
+				$this->updateVotesCounter($responseId);
 			}
 			$this->redirect(array(
 				'controller' => 'posts',
@@ -27,11 +25,9 @@
 				$this->Flash->error("You cannot vote your own response");
 			}
 			else{
-				if($this->ResponseVote->hasAny(
-					array('ResponseVote.user_id' => $user)
-					))
-					$this->ResponseVote->deleteAll(array('ResponseVote.user_id' => $user, 'ResponseVote.response_id' => $responseId));
-				$this->ResponseVote->save(array('user_id' => $user, 'response_id' => $responseId, 'liked' => 0)); //CAMBIAR SI CAMBIA COMO ALMACENAR VOTOS NEGATIVOS, PROBABLEMENTE NECESARIO
+				$this->ResponseVote->deleteAll(array('ResponseVote.user_id' => $user, 'ResponseVote.response_id' => $responseId));
+				$this->ResponseVote->save(array('user_id' => $user, 'response_id' => $responseId, 'liked' => 0));
+				$this->updateVotesCounter($responseId);
 			}
 			$this->redirect(array(
 				'controller' => 'posts',
@@ -46,14 +42,27 @@
 				$this->Flash->error("You cannot vote your own response");
 			}
 			else{
-				if($this->ResponseVote->hasAny(
-					array('ResponseVote.user_id' => $user)
-					))
-					$this->ResponseVote->deleteAll(array('ResponseVote.user_id' => $user, 'ResponseVote.response_id' => $responseId));
+				$this->ResponseVote->deleteAll(array('ResponseVote.user_id' => $user, 'ResponseVote.response_id' => $responseId));
+				$this->updateVotesCounter($responseId);
 			}
 			$this->redirect(array(
 				'controller' => 'posts',
 				'action' => 'view', $postId
 			));
     }
+
+		private function updateVotesCounter($responseId){
+			$count = 0;
+			$votes = $this->ResponseVote->find("all", array("conditions" => array(
+				"ResponseVote.response_id" => $responseId, "ResponseVote.liked" => 1
+			)));
+			$count += count($votes);
+			$votes = $this->ResponseVote->find("all", array("conditions" => array(
+				"ResponseVote.response_id" => $responseId, "ResponseVote.liked" => 0
+			)));
+			$count -= count($votes);
+			$response = $this->Response->find("first",array("conditions" => array("Response.id" => $responseId)));
+			$response['Response']["votes"] = $count;
+			$this->Response->save($response);
+		}
   }

@@ -37,7 +37,7 @@ msgstr "Valikko"
 msgid "Register"
 msgstr "Rekisteröidy"
 
-msgid "User Name"
+msgid "User name"
 msgstr "Käyttäjätunnus"
 
 msgid "Password"
@@ -195,3 +195,6 @@ msgstr "No puedes votar tu propia pregunta"
 
 msgid "You cannot vote your own response"
 msgstr "No puedes votar tu propia respuesta"
+
+msgid "Full name"
+msgstr "Koko nimi"

@@ -37,7 +37,7 @@ msgstr ""
 msgid "Register"
 msgstr ""
 
-msgid "User Name"
+msgid "User name"
 msgstr ""
 
 msgid "Password"
@@ -194,4 +194,7 @@ msgid "You cannot vote your own question"
 msgstr ""
 
 msgid "You cannot vote your own response"
+msgstr ""
+
+msgid "Full name"
 msgstr ""

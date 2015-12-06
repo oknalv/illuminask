@@ -244,10 +244,17 @@
                         <div class="form-group">
                         <?php echo $this->Form->input('name',array(
                             "class" => "form-control input-lg",
-                            "placeholder" => __("User Name"),
+                            "placeholder" => __("User name"),
                             "label" => false
                         ));?>
                         </div>
+                          <div class="form-group">
+                          <?php echo $this->Form->input('fullname',array(
+                              "class" => "form-control input-lg",
+                              "placeholder" => __("Full name"),
+                              "label" => false
+                          ));?>
+                          </div>
                         <div class="form-group">
                         <?php echo $this->Form->input('password',array(
                             "class" => "form-control input-lg",
@@ -299,7 +306,7 @@
                         <div class="form-group">
                         <?php echo $this->Form->input('name',array(
                             "class" => "form-control input-lg",
-                            "placeholder" => __("User Name"),
+                            "placeholder" => __("User name"),
                             "label" => false
                         ));?>
                         </div>

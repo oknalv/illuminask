@@ -1,7 +1,7 @@
 <?php
 	class PostsController extends AppController {
 
-  		public $helpers = array('Html', 'Form', 'Flash', 'Votes');
+  		public $helpers = array('Html', 'Form', 'Flash');
     	public $components = array('Flash','Session');
     	public $uses = array("Post","PostVisit");
 
@@ -10,7 +10,10 @@
 				if($sort == null)
 					$sort = 'newest';
 				$this->set('sort',$sort);
-				$find_params=array('order' =>'Post.date DESC');
+				if($sort == 'newest')
+					$find_params=array('order' =>'Post.date DESC');
+				else
+					$find_params=array('order' => "Post.votes DESC");
 				$conditions = array();
 				if(isset($this->request->query['search'])){
 					$search = $this->request->query['search'];
@@ -67,6 +70,7 @@
 	        if ($this->request->is('post')) {
 	        	$this->request->data['Post']['date']=date("Y-m-d H:i:s");
 	        	$this->request->data['Post']['user_id']=$this->Session->read("Auth.User.id");
+						$this->request->data['Post']['votes'] = 0;
 	            if ($this->Post->save($this->request->data)) {
 	                $this->Flash->success('Your question has been published');
 	        		$this->redirect(array('action' => 'view', $this->Post->getId()));

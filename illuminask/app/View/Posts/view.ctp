@@ -14,7 +14,7 @@
       <div class="col-xs-1 col-sm-1 col-md-1 col-md-1 custom-votes"><!-- div manitos-->
         <?php if(!AuthComponent::user("id") || $post['User']['id'] == $this->Session->read("Auth.User.id")){ ?>
           <div><i class="glyphicon glyphicon-hand-up custom-glyphicon-votes"></i></div>
-          <div class="custom-votes-number"><?= $this->Votes->calculate($post["PostVote"]);?></div>
+          <div class="custom-votes-number"><?=  $post["Post"]['votes'];?></div>
           <div><i class="glyphicon glyphicon-hand-down custom-glyphicon-votes"></i></div>
         <?php } else {
           $upvoted = false;
@@ -43,7 +43,7 @@
               ), array("escape" => false)
             ); ?>
           </div>
-          <div class="custom-votes-number"><?= $this->Votes->calculate($post["PostVote"]);?></div>
+          <div class="custom-votes-number"><?= $post["Post"]['votes'];?></div>
           <div>
             <?php if(!$downvoted)
               echo $this->Html->link("<i class='glyphicon glyphicon-hand-down custom-glyphicon-votes'></i>",array(
@@ -145,7 +145,7 @@
         <div class="col-xs-1 col-sm-1 col-md-1 custom-votes"><!--div manos respuesta-->
           <?php if(!AuthComponent::user("id") || $response['user_id'] == $this->Session->read("Auth.User.id")){ ?>
             <div><i class="glyphicon glyphicon-hand-up custom-glyphicon-votes"></i></div>
-            <div class="custom-votes-number"><?= $this->Votes->calculate($response["ResponseVote"]);?></div>
+            <div class="custom-votes-number"><?= $response['votes'];?></div>
             <div><i class="glyphicon glyphicon-hand-down custom-glyphicon-votes"></i></div>
           <?php } else {
             $upvoted = false;
@@ -174,7 +174,7 @@
               ), array("escape" => false)
             ); ?>
           </div>
-          <div class="custom-votes-number"><?= $this->Votes->calculate($response["ResponseVote"]);?></div>
+          <div class="custom-votes-number"><?= $response["votes"];?></div>
           <div>
             <?php if(!$downvoted)
               echo $this->Html->link("<i class='glyphicon glyphicon-hand-down custom-glyphicon-votes'></i>",array(

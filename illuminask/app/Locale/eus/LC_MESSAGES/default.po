@@ -37,7 +37,7 @@ msgstr "Menua"
 msgid "Register"
 msgstr "Erregistratzea"
 
-msgid "User Name"
+msgid "User name"
 msgstr "Erabiltzaile izena"
 
 msgid "Password"
@@ -195,3 +195,6 @@ msgstr "Ezin duzu zure galdera bozkatu"
 
 msgid "You cannot vote your own response"
 msgstr "Ezin duzu zure erantzuna bozkatu"
+
+msgid "Full name"
+msgstr "Izen osoa"
