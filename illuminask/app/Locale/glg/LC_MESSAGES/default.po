@@ -198,3 +198,12 @@ msgstr "Non podes votar a túa propia resposta"
 
 msgid "Full name"
 msgstr "Nome completo"
+
+msgid "Your comment has been published"
+msgstr "O teu comentario foi publicado"
+
+msgid "Your comment could not be published"
+msgstr "O teu comentario non se puido publicar"
+
+msgid "Comments"
+msgstr ""

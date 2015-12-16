@@ -198,3 +198,12 @@ msgstr "Sie können Ihre eigene Antwort nicht wählen"
 
 msgid "Full name"
 msgstr "Voller Name"
+
+msgid "Your comment has been published"
+msgstr ""
+
+msgid "Your comment could not be published"
+msgstr ""
+
+msgid "Comments"
+msgstr ""

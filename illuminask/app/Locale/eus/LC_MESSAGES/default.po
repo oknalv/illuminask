@@ -198,3 +198,12 @@ msgstr "Ezin duzu zure erantzuna bozkatu"
 
 msgid "Full name"
 msgstr "Izen osoa"
+
+msgid "Your comment has been published"
+msgstr ""
+
+msgid "Your comment could not be published"
+msgstr ""
+
+msgid "Comments"
+msgstr ""

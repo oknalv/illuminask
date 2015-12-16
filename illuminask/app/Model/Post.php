@@ -5,7 +5,7 @@
 
 		public $name = 'Post';
 		public $belongsTo = 'User';
-		public $hasMany = array('PostVote', 'Response' => array('order' => "Response.votes DESC"), 'PostVisit');
+		public $hasMany = array('PostVote', 'Response' => array('order' => "Response.votes DESC"), 'PostVisit', 'Postcomment');
 
 		public $validate = array(
         'title' => array(

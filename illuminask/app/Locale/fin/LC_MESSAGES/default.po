@@ -198,3 +198,12 @@ msgstr "Et voi äänestää omaa vastaustasi"
 
 msgid "Full name"
 msgstr "Koko nimi"
+
+msgid "Your comment has been published"
+msgstr "Kommentisi on julkaistu"
+
+msgid "Your comment could not be published"
+msgstr "Kommentisi julkaisu epäonnistui"
+
+msgid "Comments"
+msgstr ""

@@ -276,16 +276,17 @@ así como poner color, color en hover...etc*/
 /*Para recuadro usuario*/
 .custom-square-user{
 	border:1px solid #6f5499;
-	border-radius: 20px;
-	width:200px;
-	height: 80px;
+	/*border-radius: 20px;*/
+	border-radius: 6px;
+	/*width:200px;*/
+	/*height: 80px;*/
 	background-color: #cec3e0;
 	text-align: center;
 	font-weight: bold;
-}
+}/*
 .custom-date{
 	padding-top: 15px;
-}
+}*/
 .custom-user-link{
 	text-decoration: none;
 	color: #ff7206;
@@ -310,14 +311,18 @@ así como poner color, color en hover...etc*/
 
 /*Div oculta para comentar*/
 .custom-insert-comment{
-	height:140px;
+	/*height:140px;*/
 	margin-top: 20px;
 }
+
+.custom-insert-comment button{
+	margin-top: 10px;
+}
 /*Formato del textarea y de los botones de envío y reset del fromulario*/
-textarea{
-	border:1px solid #6f5499 !important;
+.custom-textarea{
+	/*border:1px solid #6f5499 !important;*/
 	background-color: #cec3e0 !important;
-	border-radius: 10px !important;
+	/*border-radius: 10px !important;*/
 }
 
 .custom-input-form{
@@ -347,11 +352,11 @@ textarea{
 		font-size: 13px;
 	}
 
-	.custom-square-user{
+/*	.custom-square-user{
 		margin-left: 5px ;
 		font-size: 13px;
 		width:130px;
-	}
+	}*/
 	.custom-question-description,.custom-answer-description{
 		font-size: 13px;
 		width:80vw;
@@ -382,10 +387,10 @@ textarea{
 		padding-left:40px ;
 	}
 
-	.custom-square-user{
+/*	.custom-square-user{
 		margin-left: 30px ;
 		width:150px;
-	}
+	}*/
 	.custom-question-description,.custom-answer-description{
 		font-size: 15px;
 	}
@@ -407,12 +412,12 @@ textarea{
 		padding-left:70px ;
 	}
 
-	.custom-square-user{
+	/*.custom-square-user{
 		margin-left: 70px ;
 	}
 	.custom-square-user{
 		width:150px;
-	}
+	}*/
 }
 
 /* Small devices (tablets, 768px and up) */
@@ -422,9 +427,9 @@ textarea{
 		padding-left:70px ;
 	}
 
-	.custom-square-user{
+	/*.custom-square-user{
 		margin-left: 80px ;
-	}
+	}*/
 
 }
 
@@ -435,9 +440,9 @@ textarea{
 		padding-left:90px ;
 	}
 
-	.custom-square-user{
+	/*.custom-square-user{
 		margin-left: 180px ;
-	}
+	}*/
 	.custom-insert-comment{
 		margin-bottom:15px;
 	}
@@ -450,9 +455,9 @@ textarea{
 		padding-left:105px ;
 	}
 
-	.custom-square-user{
+	/*.custom-square-user{
 		margin-left: 285px ;
-	}
+	}*/
 
 	.custom-insert-comment{
 		margin-bottom:15px;

@@ -198,3 +198,12 @@ msgstr "Vi ne povas vocxdoni vian propran respondon"
 
 msgid "Full name"
 msgstr "Plena nomo"
+
+msgid "Your comment has been published"
+msgstr "Via komento estis eldonita"
+
+msgid "Your comment could not be published"
+msgstr "Via komento ne povis eldoni"
+
+msgid "Comments"
+msgstr ""

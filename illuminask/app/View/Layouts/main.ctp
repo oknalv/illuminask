@@ -190,7 +190,7 @@
                 </ul>
               </div>
               <div id="menu" class="custom-menu-mobile">
-                <div class="custom-title-mobile"role="button" data-toggle="collapse" href="#collapseCateg" aria-expanded="false" aria-controls="collapseCateg">
+                <div class="custom-title-mobile" role="button" data-toggle="collapse" href="#collapseCateg" aria-expanded="false" aria-controls="collapseCateg">
                   <?= __("Categories"); ?>
                   <span class="caret"></span>
                 </div>

@@ -198,3 +198,12 @@ msgstr "Vous ne pouvez pas évaluer vôtre propre réponse"
 
 msgid "Full name"
 msgstr "Nom complet"
+
+msgid "Your comment has been published"
+msgstr "Vôtre commentaire a été publié"
+
+msgid "Your comment could not be published"
+msgstr "Nous ne pouvons pas publier vôtre commentaire"
+
+msgid "Comments"
+msgstr ""
