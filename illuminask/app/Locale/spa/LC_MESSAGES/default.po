@@ -200,10 +200,10 @@ msgid "Full name"
 msgstr "Nombre completo"
 
 msgid "Your comment has been published"
-msgstr "Tu comentario ha sido publicada"
+msgstr "Tu comentario ha sido publicado"
 
 msgid "Your comment could not be published"
 msgstr "Tu respuesta no se ha podido publicar"
 
 msgid "Comments"
-msgstr ""
+msgstr "Comentarios"

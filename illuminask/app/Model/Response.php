@@ -5,7 +5,7 @@
 
 		public $name = 'Response';
 		public $belongsTo = 'User';
-		public $hasMany = 'ResponseVote';
+		public $hasMany = array('ResponseVote', "Responsecomment");
 
 		public $validate = array(
         'content' => array(

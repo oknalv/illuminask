@@ -64,7 +64,7 @@
           <?php echo $post['Post']['content']?>
       </div>
     </div>
-    <div>
+    <div><!-- comentarios y autor-->
       <div class="custom-comment col-xs-6 col-sm-6 col-md-6">
         <?php if(AuthComponent::user("id")) { ?>
           <a class="custom-comment-link" role="button" data-toggle="collapse" href="#collapsePostComment" aria-expanded="false" aria-controls="collapsePostComment"><?= __("Add a comment"); ?></a>
@@ -104,17 +104,24 @@
             echo $this->Form->button(__("Reset"),array(
               "class" => "btn custom-btn col-xs-6 col-sm-6 col-lg-6",
               "type" => "reset"));
+              echo $this->Form->input("post_id",array("value" => $post['Post']['id'], "type" => "hidden"));
             echo $this->Form->end(); ?>
             </div>
           </div>
         </div>
-    <?php } ?>
-    <div class="col-xs-12 col-sm-12 col-lg-12"><!-- comentarios de la pregunta-->
-      <h4><?= __('Comments');?></h4>
-      <?php foreach($post['Response'] as $response){ ?>
-
       <?php } ?>
-    </div>
+      <div class="col-xs-12 col-sm-12 col-lg-12"><!-- comentarios de la pregunta-->
+        <h4><?= __('Comments');?></h4>
+        <?php foreach($post['Postcomment'] as $postcomment){ ?>
+          <div class="custom-comment">
+            "<?= $postcomment['content']; ?>" <?= sprintf(__("by %s",
+              $this->Html->link($postcomment['User']['name'], array(
+                'controller' => 'users',
+                'action'=> 'view', $postcomment['User']['id']),
+                array('class' => 'custom-user-link')))); ?>
+          </div>
+        <?php } ?>
+      </div>
     </div>
   </div><!--fin div preguntas-->
   <div class=" col-xs-12 col-sd-12 col-md-12 custom-panel-answers">
@@ -140,17 +147,17 @@
         <div class="form-group">
         <?php echo $this->Form->input('content',array(
             "type" => "textarea",
-            "class" => "form-control input-lg",
+            "class" => "form-control input-lg custom-textarea",
             "label" => false
         ));?>
         </div>
         <div class="form-group col-xs-12 col-sm-4 col-lg-3 col-xl-2">
           <?php echo $this->Form->button(__("Send"),array(
-              "class" => "custom-input-form col-xs-6 col-sm-6 col-lg-6",
+              "class" => "btn custom-btn col-xs-6 col-sm-6 col-lg-6",
               "type" => "submit"
           ));?>
           <?php echo $this->Form->button(__("Reset"),array(
-              "class" => "custom-input-form col-xs-6 col-sm-6 col-lg-6",
+              "class" => "btn custom-btn col-xs-6 col-sm-6 col-lg-6",
               "type" => "reset"
           ));?>
           <?php echo $this->Form->input("post_id",array("value" => $post['Post']['id'], "type" => "hidden")); ?>
@@ -220,29 +227,50 @@
       </div>
       <div>
         <div class=" custom-comment col-xs-6 col-sm-6 col-md-6">
-          <a href="#" class="custom-comment-link" id="secondLink-comment"><?= __("Add a comment"); ?></a>
+          <?php if(AuthComponent::user("id")) { ?>
+            <a class="custom-comment-link" role="button" data-toggle="collapse" href="#collapseResponseComment<?= $response['id']; ?>" aria-expanded="false" aria-controls="collapseResponseComment<?= $response['id']; ?>"><?= __("Add a comment"); ?></a>
+          <?php } ?>
         </div>
-        <div class="custom-user col-xs-6 col-sm-6 col-md-6">
-          <div class="custom-square-user">
-            <p class="custom-date">
-              <?php
-                $ago=$this->Date->ago($response['date']);
-                echo sprintf(__("Answered %s",sprintf(__('%s ago'),sprintf(__($ago['units']),__($ago['value'])))));
-              ?>
-            </p>
-            <a href="#" class="custom-user-link"><?= $response["User"]["name"];?></a>
-          </div>
-        </div>
-        <div hidden class="custom-insert-comment col-xs-12 col-sd-12 col-md-12" id="secondSquare-comment">
+        <div class="custom-square-user col-xs-6 col-sm-6 col-md-6">
           <div>
-            <form>
-              <label for="comment"> Introduce your comment (necessary to log in to enable comments)</label><br>
-              <textarea id="comment" rows="4" cols="148" class="form-control" disabled></textarea>
-              <input type="submit" value="Send" class="custom-input-form">
-              <input type="reset" value="Reset" class="custom-input-form">
-            </form>
+            <?php
+              $ago=$this->Date->ago($response['date']);
+              echo sprintf(__("Asked %s",sprintf(__('%s ago'),sprintf(__($ago['units']),__($ago['value'])))));
+            ?>
+          </div>
+          <div>
+          <?= sprintf(__("by %s"),$this->Html->link($response["User"]["name"], array(
+            'controller' => 'users',
+            'action' => 'view',$response["User"]["id"]),
+            array('class' => 'custom-user-link')
+          ));?>
           </div>
         </div>
+          <?php if(AuthComponent::user("id")) { ?>
+        <div class="custom-insert-comment col-xs-12 col-sd-12 col-md-12 collapse" id="collapseResponseComment<?= $response['id']; ?>">
+          <div>
+            <?php
+            echo $this->Form->create("Responsecomment", array(
+              'action' => 'add'));
+            echo $this->Form->input('content',array(
+              "type" => "textarea",
+              "class" => "form-control input-lg custom-textarea",
+              "rows" => "4",
+              "label" => false));?>
+              <div class="form-group col-xs-12 col-sm-4 col-lg-3 col-xl-2">
+            <?php
+            echo $this->Form->button(__("Send"),array(
+              "class" => "btn custom-btn col-xs-6 col-sm-6 col-lg-6",
+              "type" => "submit"));
+            echo $this->Form->button(__("Reset"),array(
+              "class" => "btn custom-btn col-xs-6 col-sm-6 col-lg-6",
+              "type" => "reset"));
+              echo $this->Form->input("response_id",array("value" => $response['id'], "type" => "hidden"));
+            echo $this->Form->end(); ?>
+            </div>
+          </div>
+        </div>
+        <?php } ?>
       </div>
     </div>
     <?php } ?>

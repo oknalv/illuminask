@@ -206,4 +206,4 @@ msgid "Your comment could not be published"
 msgstr "Via komento ne povis eldoni"
 
 msgid "Comments"
-msgstr ""
+msgstr "Komentoj"
