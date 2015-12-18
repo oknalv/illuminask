@@ -53,22 +53,29 @@
               </div>
               <?= $this->Form->end(); ?>
             <ul class="nav navbar-nav navbar-right">
-              <?php if(AuthComponent::user('id')) { ?>
-                <li><a href="#" class="custom-navbar-a custom-btn" data-toggle="modal" data-target="#newPost"><?= __("new question");?></a></li>
-                <li>
-                  <?= $this->Html->link(__("log out"), array(
-                    'controller' => 'users',
-                    'action' => 'logout'),
-                    array('class' => 'custom-navbar-a custom-btn')
-                  ); ?>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle custom-navbar-a custom-btn" type="button" id="dropdownUser" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    <i class="glyphicon glyphicon-user"></i>
+                    <span class="caret"></span>
+                  </a>
+                  <ul class="dropdown-menu custom-dropdown-menu" aria-labelledby="dropdownUser">
+                    <?php if(AuthComponent::user('id')) { ?>
+                    <li><a href="#" data-toggle="modal" data-target="#newPost"><?= __("new question");?></a></li>
+                    <li>
+                      <?= $this->Html->link(__("log out"), array(
+                        'controller' => 'users',
+                        'action' => 'logout')
+                      ); ?>
+                    </li>
+                    <?php } else { ?>
+                    <li><a href="#" data-toggle="modal" data-target="#register"><?= __("sign up");?></a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#login"><?= __("log in");?></a></li>
+                    <?php }?>
+                  </ul>
                 </li>
-              <?php } else { ?>
-                <li><a href="#" class="custom-navbar-a custom-btn" data-toggle="modal" data-target="#register"><?= __("sign up");?></a></li>
-                <li><a href="#" class="custom-navbar-a custom-btn" data-toggle="modal" data-target="#login"><?= __("log in");?></a></li>
-              <?php }?>
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle custom-navbar-a custom-btn" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                  <?= __("language") ?>
+                  <i class="glyphicon glyphicon-globe"></i>
                   <span class="caret"></span>
                 </a>
                 <ul class="dropdown-menu custom-dropdown-menu" aria-labelledby="dropdownMenu1">

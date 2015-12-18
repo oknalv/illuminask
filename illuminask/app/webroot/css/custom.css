@@ -13,6 +13,10 @@ html, body{
 	width: 100%;
 }
 
+.custom-generated-content{
+	word-wrap: break-word;
+}
+
 .custom-container-fluid{
 	height:100%;
 	width: 100%;
@@ -185,6 +189,7 @@ html, body{
 .custom-counter-number{
 	font-size: 20px;
 }
+
 .custom-question-title-link a{
 	font-size: 20px;
 }
@@ -257,8 +262,10 @@ así como poner color, color en hover...etc*/
 
 /*Para link comentario*/
 .custom-comment{
-	/*margin-top: 60px;*/
+	border-bottom: 1px solid #6f5499;
+	margin-bottom: 10px;
 }
+
 .custom-comment-link {
 	text-decoration: none;
 	color: #ff7206;
@@ -275,14 +282,9 @@ así como poner color, color en hover...etc*/
 }
 /*Para recuadro usuario*/
 .custom-square-user{
-	border:1px solid #6f5499;
-	/*border-radius: 20px;*/
+	padding: 10px;
 	border-radius: 6px;
-	/*width:200px;*/
-	/*height: 80px;*/
-	background-color: #cec3e0;
-	text-align: center;
-	font-weight: bold;
+	background-color: #d5cae7;
 }/*
 .custom-date{
 	padding-top: 15px;
@@ -345,19 +347,19 @@ así como poner color, color en hover...etc*/
 
 /*QUERIES DE CSS PARA REDEFINIR MARGENES, TAMAÑOS DE FUENTES,ETC Y QUE TODO SEA RESPONSIVE
   SE USA LOS TAMAÑOS DEFENIDOS EN CSS DE BOOTSTRAP(PONER TAMAÑO EN VEZ DE LOS NOMBRES....)
-*/
+
 @media (max-width: 395px){
-	.custom-comment{
-		padding-left:40px ;
-		font-size: 13px;
-	}
+/*	.custom-comment{
+		/*padding-left:40px ;*/
+	/*	font-size: 13px;
+	}*/
 
 /*	.custom-square-user{
 		margin-left: 5px ;
 		font-size: 13px;
 		width:130px;
 	}*/
-	.custom-question-description,.custom-answer-description{
+	/*.custom-question-description,.custom-answer-description{
 		font-size: 13px;
 		width:80vw;
 	}
@@ -383,14 +385,14 @@ así como poner color, color en hover...etc*/
 }
 
 @media (max-width: 467px) and (min-width: 396px){
-	.custom-comment{
-		padding-left:40px ;
-	}
+	/*.custom-comment{
+		/*padding-left:40px ;*/
+/*	}
 
 /*	.custom-square-user{
 		margin-left: 30px ;
 		width:150px;
-	}*/
+	}
 	.custom-question-description,.custom-answer-description{
 		font-size: 15px;
 	}
@@ -408,61 +410,61 @@ así como poner color, color en hover...etc*/
 	}
 }
 @media (max-width: 768px) and (min-width: 468px){
-	.custom-comment{
-		padding-left:70px ;
-	}
+	/*.custom-comment{
+		/*padding-left:70px ;*/
+/*	}
 
 	/*.custom-square-user{
 		margin-left: 70px ;
 	}
 	.custom-square-user{
 		width:150px;
-	}*/
+	}
 }
 
-/* Small devices (tablets, 768px and up) */
+/* Small devices (tablets, 768px and up)
 @media (min-width: 768px) {
 
-	.custom-comment{
-		padding-left:70px ;
-	}
+	/**.custom-comment{
+		/*padding-left:70px ;*/
+/*	}
 
 	/*.custom-square-user{
 		margin-left: 80px ;
-	}*/
+	}
 
 }
 
-/* Medium devices (desktops, 992px and up) */
+/* Medium devices (desktops, 992px and up)
 @media (min-width: 992px) and (max-width: 1199px){
 
-	.custom-comment{
-		padding-left:90px ;
-	}
+	/*.custom-comment{
+		/*padding-left:90px ;*/
+/*	}
 
 	/*.custom-square-user{
 		margin-left: 180px ;
-	}*/
+	}
 	.custom-insert-comment{
 		margin-bottom:15px;
 	}
  }
 
-/* Large devices (large desktops, 1200px and up) */
+/* Large devices (large desktops, 1200px and up)
 @media (min-width: 1200px ) {
 
-	.custom-comment{
-		padding-left:105px ;
-	}
+	/*.custom-comment{
+		/*padding-left:105px ;*/
+	/*}
 
 	/*.custom-square-user{
 		margin-left: 285px ;
-	}*/
+	}
 
 	.custom-insert-comment{
 		margin-bottom:15px;
 	}
- }
+ }*/
 
 .custom-dropdown-menu{
 	background-color: #bfb1d7;
@@ -487,4 +489,13 @@ hr {
 
 .custom-voted, .custom-voted:hover{
 	color: #6f5499;
+}
+
+.custom-author{
+	font-size: 14px;
+}
+
+.custom-label{
+	font-size: 16px;
+	font-weight: bold;
 }

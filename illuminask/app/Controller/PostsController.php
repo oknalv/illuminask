@@ -63,7 +63,7 @@
 					'conditions' => array(
 						'Post.id' => $id
 					),
-					'recursive' => 2)));
+					'recursive' => 3)));
     	}
 
     	public function add() {

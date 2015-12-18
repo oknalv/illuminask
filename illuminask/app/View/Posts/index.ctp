@@ -18,7 +18,7 @@
         </div>
       </div>
       <div class="col-md-9 col-xs-9" class="custom-question-title">
-        <div class="custom-question-title-link">
+        <div class="custom-question-title-link custom-generated-content">
             <?php
             echo $this->Html->link($post['Post']['title'], array(
               'controller' => 'posts',
