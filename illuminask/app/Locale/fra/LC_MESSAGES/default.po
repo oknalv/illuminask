@@ -207,3 +207,6 @@ msgstr "Nous ne pouvons pas publier vôtre commentaire"
 
 msgid "Comments"
 msgstr "Commentaires"
+
+msgid "questions"
+msgstr "questions"

@@ -200,10 +200,13 @@ msgid "Full name"
 msgstr "Voller Name"
 
 msgid "Your comment has been published"
-msgstr ""
+msgstr "Ihre Anmerkung ist veröffentlicht worden"
 
 msgid "Your comment could not be published"
-msgstr ""
+msgstr "Ihre Anmerkung hat nicht gewesen veröffentlicht gekonnt"
 
 msgid "Comments"
-msgstr ""
+msgstr "Anmerkungen"
+
+msgid "questions"
+msgstr "Fragen"

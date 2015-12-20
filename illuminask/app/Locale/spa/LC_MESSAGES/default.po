@@ -207,3 +207,6 @@ msgstr "Tu respuesta no se ha podido publicar"
 
 msgid "Comments"
 msgstr "Comentarios"
+
+msgid "questions"
+msgstr "preguntas"

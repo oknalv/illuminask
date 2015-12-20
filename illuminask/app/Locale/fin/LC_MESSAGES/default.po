@@ -207,3 +207,6 @@ msgstr "Kommentisi julkaisu epäonnistui"
 
 msgid "Comments"
 msgstr "Kommentit"
+
+msgid "questions"
+msgstr "kysymykset"

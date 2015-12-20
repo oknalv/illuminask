@@ -207,3 +207,6 @@ msgstr "Via komento ne povis eldoni"
 
 msgid "Comments"
 msgstr "Komentoj"
+
+msgid "questions"
+msgstr "demandoj"

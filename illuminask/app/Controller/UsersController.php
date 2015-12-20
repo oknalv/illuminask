@@ -46,4 +46,9 @@
 					'action' => 'index'));
 	        }
 	    }
+
+		public function view($id){
+			$this->layout= 'main';
+			$this->set('user', $this->User->find('first',array("conditions" => array("User.id" => $id))));
+		}
 	}
