@@ -4,6 +4,8 @@ App::uses('BlowfishPasswordHasher', 'Controller/Component/Auth');
 
 	class UsersController extends AppController {
 
+		public $uses = array ("User","Post","Response");
+
 		public function beforeFilter() {
 		    parent::beforeFilter();
 		    // Allow users to register and logout.
@@ -53,6 +55,9 @@ App::uses('BlowfishPasswordHasher', 'Controller/Component/Auth');
 		public function view($id){
 			$this->layout= 'main';
 			$this->set('user', $this->User->find('first',array("conditions" => array("User.id" => $id))));
+			$this->set('post', $this->Post->find('all', array("conditions" => array("Post.user_id" => $id))));
+			$this->set('response', $this->Response->find('all', array("conditions" => array("Response.user_id" => $id))));
+
 		}
 
 		public function changePassword(){

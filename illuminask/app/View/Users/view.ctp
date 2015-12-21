@@ -64,16 +64,43 @@
 </div>
 <div class="col-xs-12"><!--posts y respuestas-->
   <ul class="nav nav-tabs">
-    <li class="active"><a href="#questions" data-toggle="tab" class="custom-a"><?= __("questions"); ?></a></li>
-    <li><a href="#answers" data-toggle="tab" class="custom-a"><?= __("answers"); ?></a></li>
+    <li class="active">
+      <a href="#questions" data-toggle="tab" class="custom-a">
+        <?= __("questions"); ?>
+        <span class="badge"><?= count($post); ?></span>
+      </a>
+    </li>
+    <li>
+      <a href="#answers" data-toggle="tab" class="custom-a">
+        <?= __("answers"); ?>
+        <span class="badge"><?= count($response); ?></span>
+      </a>
+    </li>
   </ul>
   <div class="tab-content">
     <div id="questions" class="tab-pane fade in active">
     <?php
-      foreach($user['Post'] as $post){
-        echo "hola";
-      } ?>
+      foreach($post as $singlePost){ ?>
+        <h4>
+          <?= $this->Html->link($singlePost['Post']['title'], array(
+            'controller' => 'posts',
+            'action' => 'view', $singlePost['Post']['id']),
+              array('class' => "custom-a")); ?>
+        </h4>
+        <hr>
+      <?php } ?>
     </div>
-    <div id="answers" class="tab-pane fade">answers</div>
+    <div id="answers" class="tab-pane fade">
+    <?php
+      foreach($response as $singleResponse){ ?>
+        <h4>
+          <?= $this->Html->link($singleResponse['Response']['content'], array(
+            'controller' => 'posts',
+            'action' => 'view', $singleResponse['Response']['post_id']),
+              array('class' => "custom-a")); ?>
+        </h4>
+        <hr>
+      <?php } ?>
+    </div>
   </div>
 </div>
