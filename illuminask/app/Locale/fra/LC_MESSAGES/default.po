@@ -210,3 +210,30 @@ msgstr "Commentaires"
 
 msgid "questions"
 msgstr "questions"
+
+msgid "Change password"
+msgstr "Changer le mot de passe"
+
+msgid "Old password"
+msgstr "Vieux mot de passe"
+
+msgid "New password"
+msgstr "Neuf mot de passe"
+
+msgid "Confirm new password"
+msgstr "Confirmer le neuf mot de passe"
+
+msgid "You are not logged in"
+msgstr ""
+
+msgid "The old password is wrong"
+msgstr ""
+
+msgid "The new passwords do not match"
+msgstr ""
+
+msgid "Password successfuly changed"
+msgstr ""
+
+msgid "profile"
+msgstr ""

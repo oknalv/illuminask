@@ -62,6 +62,12 @@
                     <?php if(AuthComponent::user('id')) { ?>
                     <li><a href="#" data-toggle="modal" data-target="#newPost"><?= __("new question");?></a></li>
                     <li>
+                      <?= $this->Html->link(__("profile"), array(
+                        'controller' => 'users',
+                        'action' => 'view', $this->Session->read("Auth.User.id")
+                      )); ?>
+                    </li>
+                    <li>
                       <?= $this->Html->link(__("log out"), array(
                         'controller' => 'users',
                         'action' => 'logout')
@@ -181,8 +187,14 @@
               <div class="container-fluid">
                 <ul class="nav navbar-nav">
                   <?php if(AuthComponent::user('id')) { ?>
-                    <li class="col-xs-6"><a href="#" data-toggle="modal" data-target="#newPost" class="custom-navbar-a custom-btn"><?= __("new question");?></a></li>
-                    <li class="col-xs-6">
+                    <li><a href="#" data-toggle="modal" data-target="#newPost" class="custom-navbar-a custom-btn"><?= __("new question");?></a></li>
+                    <li>
+                      <?= $this->Html->link(__("profile"), array(
+                        'controller' => 'users',
+                        'action' => 'view', $this->Session->read("Auth.User.id")),
+                      array('class' => 'custom-navbar-a custom-btn')); ?>
+                    </li>
+                    <li>
                       <?= $this->Html->link(__("log out"), array(
                         'controller' => 'users',
                         'action' => 'logout'),

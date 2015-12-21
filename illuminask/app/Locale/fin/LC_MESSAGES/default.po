@@ -210,3 +210,30 @@ msgstr "Kommentit"
 
 msgid "questions"
 msgstr "kysymykset"
+
+msgid "Change password"
+msgstr "Vaihda salasana"
+
+msgid "Old password"
+msgstr "Vanha salasana"
+
+msgid "New password"
+msgstr "Uusi salasana"
+
+msgid "Confirm new password"
+msgstr "Vahvista uusi salasana"
+
+msgid "You are not logged in"
+msgstr ""
+
+msgid "The old password is wrong"
+msgstr ""
+
+msgid "The new passwords do not match"
+msgstr ""
+
+msgid "Password successfuly changed"
+msgstr ""
+
+msgid "profile"
+msgstr ""

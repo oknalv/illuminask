@@ -1,4 +1,7 @@
 <?php
+
+App::uses('BlowfishPasswordHasher', 'Controller/Component/Auth');
+
 	class UsersController extends AppController {
 
 		public function beforeFilter() {
@@ -50,5 +53,30 @@
 		public function view($id){
 			$this->layout= 'main';
 			$this->set('user', $this->User->find('first',array("conditions" => array("User.id" => $id))));
+		}
+
+		public function changePassword(){
+			if(AuthComponent::user('id') && $this->request->is('post')){
+				$passwordHasher = new BlowfishPasswordHasher();
+				$user = $this->User->find('first',array("conditions" => array("User.id" => $this->Session->read("Auth.User.id"))));
+				$storedPass = $user['User']['password'];
+				$oldPass = $this->data['User']['oldPass'];
+				$newHash = Security::hash($oldPass, 'blowfish', $storedPass);
+				if($newHash === $storedPass){
+					if($this->data['User']['newPass'] == $this->data['User']['conNewPass']){
+						$newPass = $this->data['User']['newPass'];
+						$user['User']['password'] = $newPass;
+						$this->User->save($user);
+						$this->Flash->success("Password successfuly changed");
+					}
+					else
+						$this->Flash->error("The new passwords do not match");
+				}
+				else
+					$this->Flash->error("The old password is wrong");
+			}
+			else
+				$this->Flash->error("You are not logged in");
+			$this->redirect($this->referer());
 		}
 	}

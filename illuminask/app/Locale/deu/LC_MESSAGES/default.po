@@ -210,3 +210,30 @@ msgstr "Anmerkungen"
 
 msgid "questions"
 msgstr "Fragen"
+
+msgid "Change password"
+msgstr ""
+
+msgid "Old password"
+msgstr ""
+
+msgid "New password"
+msgstr ""
+
+msgid "Confirm new password"
+msgstr ""
+
+msgid "You are not logged in"
+msgstr ""
+
+msgid "The old password is wrong"
+msgstr ""
+
+msgid "The new passwords do not match"
+msgstr ""
+
+msgid "Password successfuly changed"
+msgstr ""
+
+msgid "profile"
+msgstr ""

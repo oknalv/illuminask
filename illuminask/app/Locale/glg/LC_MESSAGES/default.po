@@ -210,3 +210,30 @@ msgstr "Comentarios"
 
 msgid "questions"
 msgstr "preguntas"
+
+msgid "Change password"
+msgstr "Cambiar contrasinal"
+
+msgid "Old password"
+msgstr "Antigo contrasinal"
+
+msgid "New password"
+msgstr "Novo contrasinal"
+
+msgid "Confirm new password"
+msgstr "Confirmar novo contrasinal"
+
+msgid "You are not logged in"
+msgstr "Non iniciaches a sesión"
+
+msgid "The old password is wrong"
+msgstr "O contrasinal antigo non coincide co que se introduciu"
+
+msgid "The new passwords do not match"
+msgstr "Os novos contrasinais non coinciden"
+
+msgid "Password successfuly changed"
+msgstr "Contrasinal cambiado con éxito"
+
+msgid "profile"
+msgstr "perfil"

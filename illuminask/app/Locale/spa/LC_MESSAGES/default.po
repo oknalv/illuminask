@@ -210,3 +210,30 @@ msgstr "Comentarios"
 
 msgid "questions"
 msgstr "preguntas"
+
+msgid "Change password"
+msgstr "Cambiar contraseña"
+
+msgid "Old password"
+msgstr "Antigua contraseña"
+
+msgid "New password"
+msgstr "Nueva contraseña"
+
+msgid "Confirm new password"
+msgstr "Confirmar contraseña"
+
+msgid "You are not logged in"
+msgstr "No has iniciado sesión"
+
+msgid "The old password is wrong"
+msgstr "La contraseña antigua no coincide con la introducida"
+
+msgid "The new passwords do not match"
+msgstr "Las nuevas contraseñas no coinciden"
+
+msgid "Password successfuly changed"
+msgstr "Contraseña cambiada con éxito"
+
+msgid "profile"
+msgstr "perfil"

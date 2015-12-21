@@ -99,14 +99,16 @@
               "class" => "form-control input-lg custom-textarea",
               "rows" => "4",
               "label" => false));?>
+              <div class="form-group col-xs-12 col-sm-4 col-lg-3 col-xl-2">
             <?php
             echo $this->Form->button(__("Send"),array(
               "class" => "btn custom-btn col-xs-6 col-sm-6 col-lg-6",
               "type" => "submit"));
             echo $this->Form->button(__("Reset"),array(
               "class" => "btn custom-btn col-xs-6 col-sm-6 col-lg-6",
-              "type" => "reset"));
-              echo $this->Form->input("post_id",array("value" => $post['Post']['id'], "type" => "hidden"));
+              "type" => "reset")); ?>
+              </div>
+              <?php echo $this->Form->input("post_id",array("value" => $post['Post']['id'], "type" => "hidden"));
             echo $this->Form->end(); } ?>
           </div>
         </div>
@@ -248,13 +250,16 @@
                 "type" => "textarea",
                 "class" => "form-control input-lg custom-textarea",
                 "rows" => "4",
-                "label" => false));
-              echo $this->Form->button(__("Send"),array(
+                "label" => false));?>
+                <div class="form-group col-xs-12 col-sm-4 col-lg-3 col-xl-2">
+              <?php echo $this->Form->button(__("Send"),array(
                 "class" => "btn custom-btn col-xs-6 col-sm-6 col-lg-6",
                 "type" => "submit"));
               echo $this->Form->button(__("Reset"),array(
                 "class" => "btn custom-btn col-xs-6 col-sm-6 col-lg-6",
-                "type" => "reset"));
+                "type" => "reset"));?>
+              </div>
+              <?php
               echo $this->Form->input("response_id",array("value" => $response['id'], "type" => "hidden"));
               echo $this->Form->end(); }?>
             </div>

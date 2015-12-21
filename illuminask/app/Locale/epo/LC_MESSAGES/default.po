@@ -210,3 +210,30 @@ msgstr "Komentoj"
 
 msgid "questions"
 msgstr "demandoj"
+
+msgid "Change password"
+msgstr "Sxangxi pasvorto"
+
+msgid "Old password"
+msgstr "Manova pasvorto"
+
+msgid "New password"
+msgstr "Nova pasvorto"
+
+msgid "Confirm new password"
+msgstr "Ripetu nova pasvorto"
+
+msgid "You are not logged in"
+msgstr ""
+
+msgid "The old password is wrong"
+msgstr ""
+
+msgid "The new passwords do not match"
+msgstr ""
+
+msgid "Password successfuly changed"
+msgstr ""
+
+msgid "profile"
+msgstr ""
