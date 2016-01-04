@@ -118,5 +118,6 @@ Configure::write('Config.languages', array(
 	"deu" => "Deutsch",
 	"fra" => "Français",
 	"glg" => "Galego",
-	"fin" => "Suomi"
+	"fin" => "Suomi",
+	"che" => "čeština" 
 ));

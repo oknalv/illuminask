@@ -1,0 +1,239 @@
+msgid "by %s"
+msgstr "od %s"
+
+msgid "%s ago"
+msgstr "před %s"
+
+msgid "search"
+msgstr "hledat"
+
+msgid "sign up"
+msgstr "zaregistrovat se"
+
+msgid "log in"
+msgstr "přihlásit se"
+
+msgid "Categories"
+msgstr "Kategorie"
+
+msgid "Newest"
+msgstr "Nové"
+
+msgid "Today"
+msgstr "Dnes"
+
+msgid "Week"
+msgstr "Týden"
+
+msgid "Month"
+msgstr "Měsíc"
+
+msgid "Voted"
+msgstr "Neoblíbenější"
+
+msgid "Menu"
+msgstr "Menu"
+
+msgid "Register"
+msgstr "Registrovat se"
+
+msgid "User name"
+msgstr "Uživatelské jméno"
+
+msgid "Password"
+msgstr "Heslo"
+
+msgid "Confirm Password"
+msgstr "Potvrďte heslo"
+
+msgid "Email"
+msgstr "Email"
+
+msgid "Log in"
+msgstr "Přihlásit se"
+
+msgid "votes"
+msgstr "hlasy"
+
+msgid "answers"
+msgstr "odpovědi"
+
+msgid "views"
+msgstr "zobrazeno"
+
+msgid "Add a comment"
+msgstr "Přidat komentář"
+
+msgid "%s year"
+msgstr "%s rok"
+
+msgid "%s years"
+msgstr "%s roky"
+
+msgid "%s month"
+msgstr "%s měsíc"
+
+msgid "%s months"
+msgstr "%s měsíce"
+
+msgid "%s day"
+msgstr "%s den"
+
+msgid "%s days"
+msgstr "%s dny"
+
+msgid "%s hour"
+msgstr "%s hodina"
+
+msgid "%s hours"
+msgstr "%s hodiny"
+
+msgid "%s minute"
+msgstr "%s minuta"
+
+msgid "%s minutes"
+msgstr "%s minuty"
+
+msgid "%s second"
+msgstr "%s vteřina"
+
+msgid "%s seconds"
+msgstr "%s vteřiny"
+
+msgid "log out"
+msgstr "odhlásit se"
+
+msgid "language"
+msgstr "jazyk"
+
+msgid "Change language"
+msgstr "Změnit jazyk"
+
+msgid "Login successful"
+msgstr "Přihlášení proběhlo úspěšně"
+
+msgid "Your question has been published"
+msgstr "Váš příspěvek byl zveřejněn"
+
+msgid "Your question has been updated"
+msgstr "Váš příspěvek byl změněn."
+
+msgid "Unable to update your question"
+msgstr "Není možné změnit váš příspěvěk"
+
+msgid "The question has been deleted"
+msgstr "Příspěvk byl smazán"
+
+msgid "Your question could not be published"
+msgstr "Váš příspěvěk nemohl být zveřejněn"
+
+msgid "Invalid username or password, try again"
+msgstr "UNeplatné uživatelské jméno nebo heslo, zkuste znovu"
+
+msgid "The user has been created"
+msgstr "Uživatelské jméno bylo vytvořeno"
+
+msgid "The user could not be created, try again"
+msgstr "Uživatelské jméno nemohlo být vytvořeno, zkuste znovu"
+
+msgid "The user already exists"
+msgstr "Zadané uživatelské jméno již existuje"
+
+msgid "new question"
+msgstr "nový příspěvek"
+
+msgid "New question"
+msgstr "Nový příspěvek"
+
+msgid "Title"
+msgstr "Název"
+
+msgid "Content"
+msgstr "Obsah"
+
+msgid "Submit"
+msgstr "Potvrdit"
+
+msgid "You are not the owner of this question"
+msgstr "Nejste autorem tohoto příspěvku"
+
+msgid "Invalid question"
+msgstr "Neplatný příspěvek"
+
+msgid "Asked %s"
+msgstr "Dotázano %s"
+
+msgid "Answered %s"
+msgstr "Odpovězeno %s"
+
+msgid "%s answers"
+msgstr "%s odpovědi"
+
+msgid "%s answer"
+msgstr "%s odpověď"
+
+msgid "Enter a response"
+msgstr "Napiš odpověď"
+
+msgid "Send"
+msgstr "Poslat"
+
+msgid "Reset"
+msgstr "Smazat"
+
+msgid "Your response could not be published"
+msgstr "Vaše odpověď nemohla být zveřejněna"
+
+msgid "Your response has been published"
+msgstr "Vaše odpověď byla zveřejněna"
+
+msgid "To enter a response, please log in"
+msgstr "Pro vložení odpovědi se přihlaste"
+
+msgid "You cannot vote your own question"
+msgstr "Nemůžete hlasovat pro váš vlastní příspěvek"
+
+msgid "You cannot vote your own response"
+msgstr "Nemůžete hlasovat pro váš vlastní odpověď"
+
+msgid "Full name"
+msgstr "Plné jméno"
+
+msgid "Your comment has been published"
+msgstr "Váš komentář byl zveřejněn"
+
+msgid "Your comment could not be published"
+msgstr "Byl publikován Vaše odpověď"
+
+msgid "Comments"
+msgstr "Komentáře"
+
+msgid "questions"
+msgstr "příspěvky"
+
+msgid "Change password"
+msgstr "Změnit heslo"
+
+msgid "Old password"
+msgstr "Staré heslo"
+
+msgid "New password"
+msgstr "Nové heslo"
+
+msgid "Confirm new password"
+msgstr "Potvrďte heslo"
+
+msgid "You are not logged in"
+msgstr "Nejste přihlášen"
+
+msgid "The old password is wrong"
+msgstr "Staré heslo je nesprávné"
+
+msgid "The new passwords do not match"
+msgstr "Nové heslo se neshodují"
+
+msgid "Password successfuly changed"
+msgstr "Heslo úspěšně změněno"
+
+msgid "profile"
+msgstr "profil"
